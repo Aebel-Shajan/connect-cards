@@ -14,7 +14,6 @@ A website to display/advertise business cards which are styled like pokemon card
 
 ## Planning
 * kanban: https://github.com/users/Aebel-Shajan/projects/3/views/1?layout=board
-* wireframe: https://excalidraw.com/#room=ec56fd420ef79d7e8cba,NOzzTg84TNuloT14fdzstw
 
 ## Technologies
 | Use             | Technology                                                   | Description                                        |
