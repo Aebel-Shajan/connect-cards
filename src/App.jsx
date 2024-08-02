@@ -9,16 +9,12 @@ function App() {
   const appRoutes = createBrowserRouter([
     {
       path: "/",
-      element: <Home/>
-    },
-    {
-      path: "/home",
-      element: <Home/>
-    },
-    {
-      path: "/",
       element: <Navigation/>,
       children: [ 
+        {
+          path: "/",
+          element: <Home />
+        },
         {
           path: "/PersonalPage",
           element: <PersonalPage/>
