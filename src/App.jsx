@@ -5,28 +5,26 @@ import PersonalPage from "./components/PersonalPage/PersonalPage";
 import Home from "./components/Home/Home";
 
 function App() {
-  
   const appRoutes = createBrowserRouter([
     {
       path: "/",
-      element: <Navigation/>,
-      children: [ 
+      element: <Navigation />,
+      children: [
         {
           path: "/",
-          element: <Home />
+          element: <Home />,
         },
         {
           path: "/:userId",
-          element: <PersonalPage/>
-        }
-      ]
-    }
-  ])
-
+          element: <PersonalPage />,
+        },
+      ],
+    },
+  ]);
 
   return (
     <>
-      <RouterProvider router={appRoutes}/>
+      <RouterProvider router={appRoutes} />
     </>
   );
 }

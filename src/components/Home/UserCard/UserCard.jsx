@@ -1,9 +1,5 @@
 const UserCard = () => {
-    return ( 
-        <div>
-            UserCard
-        </div>
-     );
-}
- 
+  return <div>UserCard</div>;
+};
+
 export default UserCard;
