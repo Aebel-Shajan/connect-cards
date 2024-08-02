@@ -8,7 +8,6 @@ function App() {
   const appRoutes = createBrowserRouter([
     {
       path: "/",
-      element: <Navigation />,
       children: [
         {
           path: "/",
