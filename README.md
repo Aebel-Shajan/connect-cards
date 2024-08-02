@@ -69,7 +69,7 @@ npm run preview | npm run preview / yarn preview
 npm run lint | Runs ESLint to analyze the code for issues.
 npm run format | Runs Prettier to format the code.
 
-	
+5. Contributing: make changes -> run app in dev mode -> format code.
 	
 	
 	
