@@ -1,6 +1,5 @@
 //import "./App.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import Navigation from "./components/Navigation";
 import PersonalPage from "./components/PersonalPage/PersonalPage";
 import Home from "./components/Home/Home";
 
