@@ -69,7 +69,44 @@ npm run preview | npm run preview / yarn preview
 npm run lint | Runs ESLint to analyze the code for issues.
 npm run format | Runs Prettier to format the code.
 
-5. Contributing: make changes -> run app in dev mode -> format code.
+### Contributing
+
+1. Create branch with feature you want to work on:
+
+```sh
+git checkout -b feature/{FeatureName}
+```
+
+2. (Optional) Pull branch from repo if it already exists:
+
+```sh
+git pull origin feature/{FeatureName}
+```
+
+3. Make changes in code, testing features by running app in dev mode by doing:
+
+```sh
+npm run dev
+```
+
+4. Format code by doing:
+
+```sh
+npm run format
+```
+
+5. Commit your changes:
+
+```sh
+git add .
+git commit -m "Describe feature changes here."
+```
+
+6. Push changes and create pull requests:
+
+```sh
+git push origin feature/{FeatureName}
+```
 	
 	
 	
