@@ -16,7 +16,7 @@ function App() {
           element: <Home />
         },
         {
-          path: "/PersonalPage",
+          path: "/:userId",
           element: <PersonalPage/>
         }
       ]

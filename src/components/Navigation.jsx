@@ -7,7 +7,6 @@ const Navigation = () => {
         <>
             <section className="navbar">
                 <button onClick={() => navigate("/")}>Home</button>
-                <button onClick={() => navigate("/PersonalPage")}>PersonalPage</button>
             </section>
                 <Outlet/>
         </>
