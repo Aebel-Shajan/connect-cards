@@ -106,3 +106,26 @@
 .card-link> svg {
     font-size: 1.1rem;
 }
+
+.card-skill-container {
+    width: 100%;
+    height: 1.5rem;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-skill {
+    width: 5rem;
+
+    overflow: hidden;
+    background-color: rgb(228, 199, 9);
+    box-shadow: inset 0 -4px 8px #a89f05, 0 4px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

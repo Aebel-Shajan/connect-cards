@@ -57,7 +57,9 @@ const UserCard = ({ user }) => {
         {linkComponents}
       </div>
       <div className="card-skill-container">
-
+        {user.skills.slice(0, 3).map((skill, index) => {
+          return <div className="card-skill" key={`user ${user.name} skill${index}`}>{skill}</div>
+        })}
       </div>
     </div>
   );
