@@ -1,4 +1,23 @@
+#title{
+  color: #B9D6F2;
+  padding: 2rem;
+}
 .profile-pic {
   height: 10rem;
   width: 10rem;
+  margin-bottom: 1rem;
+}
+
+.body{
+  text-align: center;
+  background-color: #061A40;
+}
+
+.buttons {
+  width: 90%;
+  height: 7rem;
+  margin: 1.5rem auto;
+  border-radius: 10rem;
+  background-color: #B9D6F2;
+  size: 10rem;
 }

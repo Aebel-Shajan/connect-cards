@@ -14,12 +14,12 @@ const PersonalPage = () => {
   };
 
   const buttons = links.map((link) => (
-    <button onClick={() => handleClick(link)}>Link</button>
+    <button className="buttons" onClick={() => handleClick(link)}>Link</button>
   ));
 
   return (
-    <div>
-      <h1>{userId}&apos;s Personal Page</h1>
+    <div className="body">
+      <h1 id="title">{userId}&apos;s Personal Page</h1>
       <img
         className="profile-pic"
         src="https://cdn.pixabay.com/photo/2017/06/13/12/54/profile-2398783_1280.png"
