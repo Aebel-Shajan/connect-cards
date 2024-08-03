@@ -1,9 +1,15 @@
+import PropTypes from "prop-types";
+
 const UserCard = ({ user }) => {
   return (
-    <div>
-      <h1>{user.name}</h1>
+    <div className="card-border">
+      <div className="card-title">{user.name}</div>
     </div>
-  )
+  );
+};
+
+UserCard.propTypes = {
+  user: PropTypes.object,
 };
 
 export default UserCard;
