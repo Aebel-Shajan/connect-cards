@@ -19,12 +19,12 @@ const UserCard = ({ user }) => {
         {user.occupation}
       </div>
       <div className="card-description">
-
+        {user.description.substring(0, 100)}
       </div>
-      <div className="card-links">
-
+      <div className="card-link-container">
+        {}
       </div>
-      <div className="card-skills">
+      <div className="card-skill-container">
 
       </div>
     </div>
