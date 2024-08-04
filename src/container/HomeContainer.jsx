@@ -5,6 +5,9 @@ import usersData from '../data/users.json';
 const HomeContaienr = () => {
 
     const [users, setUsers] = useState([]);
+    const [searchValue, setSearchValue] = useState("");
+
+
 
     const loadUsers = () => {
         setUsers(usersData);
@@ -17,7 +20,7 @@ const HomeContaienr = () => {
 
     return ( 
         <>
-        <Home />
+        <Home users={users} setSearchValue={setSearchValue}/>
         </>
      );
 }

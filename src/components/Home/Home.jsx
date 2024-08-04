@@ -1,6 +1,8 @@
+import Search from "./Search/Search";
 import UserCard from "./UserCard/UserCard";
 
-const Home = () => {
+const Home = ( { users, setSearchValue } ) => {
+
   let userList = [];
   for (let i = 0; i <= 10; i++) {
     const user = {
@@ -21,6 +23,8 @@ const Home = () => {
   return (
     <div>
       <h1>Home</h1>
+      <Search setSearchValue={setSearchValue}/>
+
       {userCardComponents}
     </div>
   );
