@@ -18,9 +18,19 @@ const HomeContaienr = () => {
         console.log(users);
     }, []);
 
+
+    const filteredUserCards = users.filter((user) => {
+        if(searchValue){
+            return (user.name.toLowerCase().startsWith(searchValue.toLowerCase()))
+        }
+
+        return true;
+    });
+
+
     return ( 
         <>
-        <Home users={users} setSearchValue={setSearchValue}/>
+        <Home users={filteredUserCards} setSearchValue={setSearchValue}/>
         </>
      );
 }

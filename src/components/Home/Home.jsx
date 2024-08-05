@@ -10,7 +10,7 @@ const Home = ( { users, setSearchValue } ) => {
   return (
     <div>
       <h1>Home</h1>
-      <Search setSearchValue={setSearchValue}/>
+      <Search setSearchValue={setSearchValue} />
 
       {userCardComponents}
     </div>

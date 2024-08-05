@@ -1,12 +1,17 @@
 const Search = ( { setSearchValue } ) => {
 
 
-  return 
+  return (
     <div>
       <form>
-        <intput className="search" type="text" placeholder="Search Card..." onChange={(event) => {setSearchValue(event.target.value)}} />
+        <input className="search"
+                type="text" 
+                placeholder="Search Card..." 
+                onChange={(event) => {setSearchValue(event.target.value)}} 
+        />
       </form>
-    </div>;
+    </div>
+  );
 };
 
 export default Search;
