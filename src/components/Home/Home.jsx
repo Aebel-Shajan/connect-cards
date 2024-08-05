@@ -4,7 +4,7 @@ const Home = () => {
   let userList = [];
   for (let i = 0; i <= 10; i++) {
     const user = {
-      name: `user${i}`,
+      name: `Pikachu ${i}`,
       image: "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/025.png",
       type: "pokemon type",
       occupation: "occupation",
@@ -14,7 +14,7 @@ const Home = () => {
         "Github": "Github.com",
         "Portfolio": "portfolio.com"
       },
-      skills: ["skill 1", "skill 2", "skill3"], // max 3 skills
+      skills: ["Supabase", "Amp", "Vite"], // max 3 skills
     };
     userList.push(user);
   }
