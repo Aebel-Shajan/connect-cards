@@ -10,7 +10,11 @@ const UserSkills = ({ skills }) => {
       <div
         className="card-skill"
         key={`user skill${i}`}>
-        {skillName}
+        <div className="card-skill-text">
+          {skillName}
+        </div>
+        <div className="card-skill-overlay">        
+        </div>
       </div>
     )
     if (Object.keys(markdownBadges).includes(skillName)) {
@@ -19,7 +23,9 @@ const UserSkills = ({ skills }) => {
           className="card-skill"
           key={`user skill${i}`}>
           <div className="card-skill-overlay"></div>
-          <img src={markdownBadges[skillName]} />
+          <img
+            className="card-skill-image"
+            src={markdownBadges[skillName]} />
         </div>
       )
     }

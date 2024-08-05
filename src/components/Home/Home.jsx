@@ -14,7 +14,7 @@ const Home = () => {
         "Github": "Github.com",
         "Portfolio": "portfolio.com"
       },
-      skills: ["Supabase", "Amp", "Vite"], // max 3 skills
+      skills: ["Apache Spark", "Cloudera", "3DS"], // max 3 skills
     };
     userList.push(user);
   }
