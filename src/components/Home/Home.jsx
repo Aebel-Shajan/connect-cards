@@ -6,8 +6,8 @@ const Home = () => {
     const user = {
       name: `Pikachu ${i}`,
       image: "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/025.png",
-      type: "pokemon type",
-      occupation: "occupation",
+      type: "data",
+      occupation: "Data Engineer",
       description: "Hello this is a description which is very long and it will continue more and more and more and more. This bit however will not be displayed",
       links: {
         "LinkedIn": "LinkedIn.com",

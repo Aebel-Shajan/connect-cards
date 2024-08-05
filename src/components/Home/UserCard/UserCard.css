@@ -4,9 +4,9 @@
     padding: 0.5rem;
     
     overflow: hidden;
-    --background-color: rgba(255, 240, 109, 0.64);
+    --type-color-transparent: rgba(255, 255, 255, 0.489);
     background: 
-    linear-gradient( var(--background-color), var(--background-color)),
+    linear-gradient( var(--type-color-transparent), var(--type-color-transparent)),
     url(https://static.vecteezy.com/system/resources/thumbnails/004/837/100/small/grey-watercolor-paper-or-concrete-grunge-background-vector.jpg);
     background-size: 20rem;
     border: solid rgb(228, 199, 9) 1rem;
@@ -33,14 +33,20 @@
 .card-type {
     width: 2rem;
     height: 2rem;
+    padding: 0.4rem;
 
     border-radius: 50%;
-    background-color: rgb(250, 209, 5);
-    box-shadow: inset 0 -2px 8px #a89f05, 0 4px 6px rgba(0, 0, 0, 0.2);
+    background-color: var(--type-color-transparent);
+    box-shadow: inset 0 -2px 8px black, 0 4px 6px rgba(0, 0, 0, 0.2);
 
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.card-type > svg {
+    width: 100%;
+    height: 100%;
 }
 
 .card-image-container {
@@ -48,7 +54,7 @@
     height: 12rem;    
 
     border: solid rgb(228, 199, 9) 0.45rem;
-    background: radial-gradient(circle, rgb(139, 120, 0), rgb(35, 147, 106));
+    background: radial-gradient(circle, rgb(160, 186, 177), rgb(65, 57, 57));
     box-shadow: 4px 4px 13px 0px rgba(0,0,0,0.75);
 
     align-self: center;
