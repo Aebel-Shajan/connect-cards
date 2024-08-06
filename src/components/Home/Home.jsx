@@ -1,7 +1,7 @@
 import Search from "./Search/Search";
 import UserCard from "./UserCard/UserCard";
 import { useEffect, useState } from "react";
-import usersData from '../../data/users.json';
+import usersData from '../../assets/data/users.json';
 
 const Home = () => {
     const [users, setUsers] = useState([]);
