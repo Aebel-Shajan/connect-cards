@@ -89,5 +89,18 @@
         "serebii": ""
     },
     "skills": ["AWS", "Alibaba Cloud", "Google Cloud"]
-}
+  },
+  {
+    "name": "Pokechu",
+    "type": "Normal",
+    "image": "/pokechu.png",
+    "occupation": "yes",
+    "description": "???",
+    "links": {
+        "??":"",
+        "?": "",
+        "?!": ""
+    },
+    "skills": ["Wii", "3DS", "Gamecube"]
+  }
 ]
