@@ -1,13 +1,21 @@
 const Search = ( { setSearchValue } ) => {
 
+  const handleInput = (event) => {
+    setSearchValue(event.target.value);
+  }
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    console.log("Form Submitted");
+  }
 
   return (
     <div>
-      <form>
+      <form onSubmit={handleSubmit}>
         <input className="search"
                 type="text" 
                 placeholder="Search Card..." 
-                onChange={(event) => {setSearchValue(event.target.value)}} 
+                onChange={handleInput} 
         />
       </form>
     </div>
