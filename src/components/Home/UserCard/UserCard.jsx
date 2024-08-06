@@ -65,9 +65,11 @@ const UserCard = ({ user }) => {
         <div className="card-title">{user.name}</div>
         <div className="card-type">{typeStyle["icon"]}</div>
       </div>
-      <div className="card-image-container">
+      <a 
+        className="card-image-container"
+        href={`/${user.name}`}>
         <img className="card-image" src={user.image} />
-      </div>
+      </a>
       <div className="card-occupation">{user.occupation}</div>
       <div className="card-description">
         {user.description.substring(0, 100)}
