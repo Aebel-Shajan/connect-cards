@@ -1,5 +1,7 @@
 import { useParams } from "react-router-dom";
 import "./PersonalPage.css";
+import {} from "module";
+import profileIcon from "../../assets/profile-icon.png";
 
 const PersonalPage = () => {
   let { userId } = useParams();
@@ -14,16 +16,15 @@ const PersonalPage = () => {
   };
 
   const buttons = links.map((link) => (
-    <button className="buttons" onClick={() => handleClick(link)}>Link</button>
+    <button className="buttons" onClick={() => handleClick(link)}>
+      Link
+    </button>
   ));
 
   return (
     <div className="body">
+      <img className="profile-pic" src={profileIcon} />
       <h1 id="title">{userId}&apos;s Personal Page</h1>
-      <img
-        className="profile-pic"
-        src="https://cdn.pixabay.com/photo/2017/06/13/12/54/profile-2398783_1280.png"
-      />
       <div>{buttons}</div>
     </div>
   );
