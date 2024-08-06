@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import usersData from '../../data/users.json';
 
 const Home = () => {
-
     const [users, setUsers] = useState([]);
     const [searchValue, setSearchValue] = useState("");
 
