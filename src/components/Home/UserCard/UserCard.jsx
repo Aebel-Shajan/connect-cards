@@ -17,7 +17,7 @@ const UserCard = ({ user }) => {
   const typeReference = {
     data: {
       icon: <FaDatabase />,
-      color: "#4DB8FF", // light blue
+      color: "#ffff80", // light yellow
     },
     backend: {
       icon: <FaGear />,
