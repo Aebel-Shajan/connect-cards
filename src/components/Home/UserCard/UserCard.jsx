@@ -51,7 +51,7 @@ const UserCard = ({ user }) => {
 
   let typeStyle = typeReference["normal"];
   if (Object.keys(typeReference).includes(user.type.toLowerCase())) {
-    typeStyle = typeReference[user.type];
+    typeStyle = typeReference[user.type.toLowerCase()];
   }
 
   return (
