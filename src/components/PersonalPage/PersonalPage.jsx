@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import "./PersonalPage.css";
 import {} from "module";
 import profileIcon from "../../assets/profile-icon.png";
+import background from "../../assets/background.png";
 
 const PersonalPage = () => {
   let { userId } = useParams();
@@ -22,11 +23,13 @@ const PersonalPage = () => {
   ));
 
   return (
-    <div className="body">
-      <img className="profile-pic" src={profileIcon} />
-      <h1 id="title">{userId}&apos;s Personal Page</h1>
+    <body className="body">
+      <div className="header">
+        <img className="profile-pic" src={profileIcon} />
+        <h1 id="title">{userId}&apos;s Personal Page</h1>
+      </div>
       <div>{buttons}</div>
-    </div>
+    </body>
   );
 };
 
