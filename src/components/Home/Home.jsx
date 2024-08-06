@@ -1,26 +1,41 @@
+import Search from "./Search/Search";
 import UserCard from "./UserCard/UserCard";
+import { useEffect, useState } from "react";
+import usersData from '../../data/users.json';
 
 const Home = () => {
-  let userList = [];
-  for (let i = 0; i <= 10; i++) {
-    const user = {
-      name: `user${i}`,
-      "profile-pic": "either from asset folder or online",
-      type: "pokemon type",
-      occupation: "",
-      description: "description less than 50 chars.",
-      links: ["link 1", "link 2", "link 3"],
-      skills: ["skill 1", "skill 2", "skill3"], // max 3 skills
-    };
-    userList.push(user);
-  }
-  const userCardComponents = userList.map((user, i) => {
+    const [users, setUsers] = useState([]);
+    const [searchValue, setSearchValue] = useState("");
+
+
+    const loadUsers = () => {
+        setUsers(usersData);
+    }
+
+    useEffect(() => {
+        loadUsers();
+        console.log(users);
+    }, []);
+
+
+    const filteredUserCards = users.filter((user) => {
+        if(searchValue){
+            return (user.name.toLowerCase().startsWith(searchValue.toLowerCase()))
+        }
+        return true;
+    });
+
+
+  const userCardComponents = filteredUserCards.map((user, i) => {
     return <UserCard user={user} key={`user${i}`} />;
   });
+
 
   return (
     <div>
       <h1>Home</h1>
+      <Search setSearchValue={setSearchValue} />
+
       {userCardComponents}
     </div>
   );
