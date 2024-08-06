@@ -2,6 +2,7 @@ import Search from "./Search/Search";
 import UserCard from "./UserCard/UserCard";
 import { useEffect, useState } from "react";
 import usersData from "../../assets/data/users.json";
+import "./Home.css";
 
 const Home = () => {
   const [users, setUsers] = useState([]);
@@ -28,11 +29,12 @@ const Home = () => {
   });
 
   return (
-    <div>
+    <div className="home-container">
       <h1>Home</h1>
       <Search setSearchValue={setSearchValue} />
-
-      {userCardComponents}
+      <div className="user-card-container">
+        {userCardComponents}
+      </div>
     </div>
   );
 };
