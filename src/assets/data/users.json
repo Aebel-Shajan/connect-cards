@@ -1,106 +1,93 @@
 [
   {
     "name": "Aebel",
-    "type": "pokemon type",
+    "type": "Data",
+    "image": "https://i.pinimg.com/originals/06/a4/68/06a468cb80122f3d28831fe88f681d9d.png",
     "occupation": "Data Analyst",
-    "description": "description less than 50 chars.",
-    "links": ["link 1", "link 2", "link 3"],
-    "skills": ["Python", "SQL", "Excel"]
+    "description": "I like data, making things and pokemon (before gen v).",
+    "links": {
+        "linkedin": "https://www.linkedin.com/in/aebel-shajan",
+        "github": "https://www.github.com/aebel-shajan",
+        "Portfolio": "https://www.aebel-shajan.github.io"
+    },
+    "skills": ["Python", "Apache Spark", "Pandas"]
   },
   {
     "name": "Yabbi",
-    "type": "pokemon type",
-    "occupation": "Job Hunting",
-    "description": "description less than 50 chars.",
-    "links": ["link 1", "link 2", "link 3"],
-    "skills": ["SQL", "Java", "ReactJS"]
+    "type": "Frontend",
+    "image": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/1009.png",
+    "occupation": "Walker 🚶‍♀️",
+    "description": "I walk thats all i do.",
+    "links": {
+        "linkedin": "https://www.linkedin.com/in/aebel-shajan",
+        "github": "https://www.github.com/aebel-shajan",
+        "Portfolio": "https://www.aebel-shajan.github.io"
+    },
+    "skills": ["React", "JavaScript", "Spring"]
   },
   {
     "name": "Kajanan",
-    "type": "pokemon type",
+    "type": "Backend",
+    "image": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/137.png",
     "occupation": "Job Hunting",
-    "description": "description less than 50 chars.",
-    "links": ["link 1", "link 2", "link 3"],
-    "skills": ["Java", "ReactJS", "SQL"]
+    "description": "description less than 100 chars.",
+    "links": {
+        "linkedin": "https://www.linkedin.com/in/aebel-shajan",
+        "github": "https://www.github.com/aebel-shajan",
+        "Portfolio": "https://www.aebel-shajan.github.io"
+    },
+    "skills": ["Java", "Spring", "Postgres"]
   },
   {
-    "name": "Alexander",
-    "type": "pokemon type",
-    "occupation": "Job Hunting",
-    "description": "description less than 50 chars.",
-    "links": ["link 1", "link 2", "link 3"],
-    "skills": ["Java", "ReactJS", "SQL"]
+    "name": "Rayquaza",
+    "type": "Devops",
+    "image": "https://wallpapers-clan.com/wp-content/uploads/2024/04/pokemon-rayquaza-epic-desktop-wallpaper-preview.jpg",
+    "occupation": "Senior DevOps Engineer",
+    "description": "Known for mastering system stability, ensuring operations for millions of years.",
+    "links": {
+        "pokemon": "https://www.pokemon.com/uk/pokedex/rayquaza",
+        "github": "https://github.com/rayquaza",
+        "serebii": "https://www.serebii.net/pokedex-xy/384.shtml"
+    },
+    "skills": ["Docker", "Jenkins", "Kubernetes"]
   },
   {
-    "name": "Abdul",
-    "type": "pokemon type",
-    "occupation": "Job Hunting",
-    "description": "description less than 50 chars.",
-    "links": ["link 1", "link 2", "link 3"],
-    "skills": ["Java", "ReactJS", "SQL"]
+    "name": "Magnemite",
+    "type": "Cybersecurity",
+    "image": "https://static.wikia.nocookie.net/pokemon/images/6/66/Head_of_Security%27s_Magnemite.png",
+    "occupation": "Penetration Testing Lead",
+    "description": "Born with the ability to defy breaches, it secures networks on powerful electromagnetic waves.",
+    "links": {
+        "pokemon":"",
+        "github": "",
+        "serebii": ""
+    },
+    "skills": ["C++", "Kali", "Shell Script"]
   },
   {
-    "name": "Lisa",
-    "type": "pokemon type",
-    "occupation": "Job Hunting",
-    "description": "description less than 50 chars.",
-    "links": ["link 1", "link 2", "link 3"],
-    "skills": ["Java", "ReactJS", "SQL"]
+    "name": "Espeon",
+    "type": "AI",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyjVxbJna2oxHyNQWiXpEGIjpWyrVSc436Hg&s",
+    "occupation": "AI/ML Architect",
+    "description": "Make ai.",
+    "links": {
+        "pokemon":"",
+        "github": "",
+        "serebii": ""
+    },
+    "skills": ["ChatGPT", "PyTorch", "Julia"]
   },
   {
-    "name": "John",
-    "type": "pokemon type",
-    "occupation": "Job Hunting",
-    "description": "description less than 50 chars.",
-    "links": ["link 1", "link 2", "link 3"],
-    "skills": ["Java", "ReactJS", "SQL"]
-  },
-  {
-    "name": "Jeff",
-    "type": "pokemon type",
-    "occupation": "Job Hunting",
-    "description": "description less than 50 chars.",
-    "links": ["link 1", "link 2", "link 3"],
-    "skills": ["Java", "ReactJS", "SQL"]
-  },
-  {
-    "name": "Anna",
-    "type": "pokemon type",
-    "occupation": "Job Hunting",
-    "description": "description less than 50 chars.",
-    "links": ["link 1", "link 2", "link 3"],
-    "skills": ["Java", "ReactJS", "SQL"]
-  },
-  {
-    "name": "Kyle",
-    "type": "pokemon type",
-    "occupation": "Job Hunting",
-    "description": "description less than 50 chars.",
-    "links": ["link 1", "link 2", "link 3"],
-    "skills": ["Java", "ReactJS", "SQL"]
-  },
-  {
-    "name": "Kylie",
-    "type": "pokemon type",
-    "occupation": "Job Hunting",
-    "description": "description less than 50 chars.",
-    "links": ["link 1", "link 2", "link 3"],
-    "skills": ["Java", "ReactJS", "SQL"]
-  },
-  {
-    "name": "Katie",
-    "type": "pokemon type",
-    "occupation": "Job Hunting",
-    "description": "description less than 50 chars.",
-    "links": ["link 1", "link 2", "link 3"],
-    "skills": ["Java", "ReactJS", "SQL"]
-  },
-  {
-    "name": "Sofia",
-    "type": "pokemon type",
-    "occupation": "Job Hunting",
-    "description": "description less than 50 chars.",
-    "links": ["link 1", "link 2", "link 3"],
-    "skills": ["Java", "ReactJS", "SQL"]
-  }
+    "name": "Tornadus",
+    "type": "Cloud",
+    "image": "https://static.wikia.nocookie.net/vsbattles/images/b/b4/Tornadus2018.png",
+    "occupation": "Junior AWS Cloud Engineer",
+    "description": "Literally just a buff naked dude floating on some clouds. I never understood why this was a pokemon.",
+    "links": {
+        "pokemon":"",
+        "github": "",
+        "serebii": ""
+    },
+    "skills": ["AWS", "Alibaba Cloud", "Google Cloud"]
+}
 ]
