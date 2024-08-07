@@ -12,6 +12,7 @@ import { CgPokemon } from "react-icons/cg";
 import "./UserLinks.css";
 
 const UserLinks = ({ links }) => {
+  console.log(links)
   let linkComponents = [];
   const iconReference = {
     linkedin: <FaLinkedin />,
@@ -22,6 +23,8 @@ const UserLinks = ({ links }) => {
     discord: <FaDiscord />,
     pokemon: <CgPokemon />,
   };
+
+
 
   for (let i = 0; i < 3; i++) {
     const linkName = Object.keys(links)[i];
@@ -37,11 +40,12 @@ const UserLinks = ({ links }) => {
     );
   }
 
+
   return <div className="card-link-container">{linkComponents}</div>;
 };
 
 UserLinks.propTypes = {
-  links: PropTypes.object,
+  links: PropTypes.array,
 };
 
 export default UserLinks;
