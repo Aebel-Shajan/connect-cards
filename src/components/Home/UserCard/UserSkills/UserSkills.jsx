@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import markdownBadges from "../../../../assets/markdown-badges.json";
+import markdownBadges from "../../../../assets/data/markdown-badges.json";
 import "./UserSkills.css";
 
 const UserSkills = ({ skills }) => {
