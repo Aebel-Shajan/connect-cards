@@ -33,10 +33,10 @@ const UserLinks = ({ links }) => {
       linkLogo = iconReference[linkName.toLowerCase()];
     }
     linkComponents[i] = (
-      <a className="card-link" href={links[linkName]} key={`link${i}`}>
+      <button className="buttons" href={links[linkName]} key={`link${i}`}>
         {linkLogo}
         {linkName}
-      </a>
+      </button>
     );
   }
 

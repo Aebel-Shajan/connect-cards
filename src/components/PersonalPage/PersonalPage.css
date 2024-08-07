@@ -29,6 +29,12 @@
   font-size: 2rem;
   color: #243831;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  padding: 1rem 19rem;
+  font-weight: bold;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .buttons:hover {
