@@ -12,6 +12,7 @@ import { CgPokemon } from "react-icons/cg";
 import "./UserLinks.css";
 
 const UserLinks = ({ links }) => {
+  console.log(links);
   let linkComponents = [];
   const iconReference = {
     linkedin: <FaLinkedin />,
@@ -23,6 +24,10 @@ const UserLinks = ({ links }) => {
     pokemon: <CgPokemon />,
   };
 
+  const handleClick = (url) => {
+    window.open(url);
+  };
+
   for (let i = 0; i < 3; i++) {
     const linkName = Object.keys(links)[i];
     let linkLogo = <FaLink />;
@@ -30,7 +35,11 @@ const UserLinks = ({ links }) => {
       linkLogo = iconReference[linkName.toLowerCase()];
     }
     linkComponents[i] = (
-      <button className="buttons" href={links[linkName]} key={`link${i}`}>
+      <button
+        className="buttons"
+        key={`link${i}`}
+        onClick={() => handleClick(Object.values(links)[i])}
+      >
         {linkLogo}
         {linkName}
       </button>

@@ -1,6 +1,7 @@
 import Search from "./Search/Search";
 import UserCard from "./UserCard/UserCard";
 import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 import "./Home.css";
 
 const Home = ({ users }) => {

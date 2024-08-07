@@ -8,8 +8,8 @@ import UserLinks from "./Links/UserLinks";
 const PersonalPage = ({ users }) => {
   let { userId } = useParams();
   const user = users.find((user) => user.name === userId);
-
-  const links = user.links;
+  console.log(user);
+  const links = user?.links;
 
   return (
     <main className="body">
@@ -17,7 +17,6 @@ const PersonalPage = ({ users }) => {
         <img className="profile-pic" src={profileIcon} />
         <h1 id="title">{userId}&apos;s Personal Page</h1>
       </div>
-      {/* <div>{buttons}</div> */}
       <div>
         <UserLinks links={links} />
       </div>
