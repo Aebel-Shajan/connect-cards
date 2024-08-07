@@ -3,22 +3,22 @@ import UserCard from "./UserCard/UserCard";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import usersData from "../../assets/data/users.json";
+import PersonalPage from "../PersonalPage/PersonalPage";
 import "./Home.css";
 
-const Home = () => {
-  const [users, setUsers] = useState([]);
+const Home = ({ users }) => {
+  // const [users, setUsers] = useState([]);
   const [searchValue, setSearchValue] = useState("");
   const navigate = useNavigate();
 
-  const loadUsers = () => {
-    setUsers(usersData);
-  };
+  // const loadUsers = () => {
+  //   setUsers(usersData);
+  // };
 
-  useEffect(() => {
-    loadUsers();
-    console.log(users);
-  }, []);
-
+  // useEffect(() => {
+  //   loadUsers();
+  // }, []);
+  
   const filteredUserCards = users.filter((user) => {
     if (searchValue) {
       return user.name.toLowerCase().startsWith(searchValue.toLowerCase());
@@ -34,7 +34,6 @@ const Home = () => {
             />;
   });
 
-
   return (
     <div className="home-container">
       <h1>Home</h1>
@@ -42,6 +41,7 @@ const Home = () => {
       <div className="user-card-container">
         {userCardComponents}
       </div>
+      
     </div>
   );
 };
