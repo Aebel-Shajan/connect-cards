@@ -1,0 +1,12 @@
+.user-card-container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 2rem;
+
+    background: linear-gradient(to bottom, #2b5876, #4e4376);;
+
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}

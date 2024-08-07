@@ -17,7 +17,7 @@ const UserCard = ({ user }) => {
   const typeReference = {
     data: {
       icon: <FaDatabase />,
-      color: "#4DB8FF", // light blue
+      color: "#ffff80", // light yellow
     },
     backend: {
       icon: <FaGear />,
@@ -51,7 +51,7 @@ const UserCard = ({ user }) => {
 
   let typeStyle = typeReference["normal"];
   if (Object.keys(typeReference).includes(user.type.toLowerCase())) {
-    typeStyle = typeReference[user.type];
+    typeStyle = typeReference[user.type.toLowerCase()];
   }
 
   return (
@@ -65,9 +65,11 @@ const UserCard = ({ user }) => {
         <div className="card-title">{user.name}</div>
         <div className="card-type">{typeStyle["icon"]}</div>
       </div>
-      <div className="card-image-container">
+      <a 
+        className="card-image-container"
+        href={`/${user.name}`}>
         <img className="card-image" src={user.image} />
-      </div>
+      </a>
       <div className="card-occupation">{user.occupation}</div>
       <div className="card-description">
         {user.description.substring(0, 100)}
