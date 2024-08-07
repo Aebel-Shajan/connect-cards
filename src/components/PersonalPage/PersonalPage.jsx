@@ -2,7 +2,6 @@ import { useParams } from "react-router-dom";
 import "./PersonalPage.css";
 import {} from "module";
 import profileIcon from "../../assets/profile-icon.png";
-import background from "../../assets/background.png";
 
 const PersonalPage = () => {
   let { userId } = useParams();
@@ -13,7 +12,7 @@ const PersonalPage = () => {
   ];
 
   const handleClick = (url) => {
-    window.location.href = url;
+    window.open(url);
   };
 
   const buttons = links.map((link) => (
