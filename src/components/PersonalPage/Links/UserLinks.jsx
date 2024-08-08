@@ -50,7 +50,7 @@ const UserLinks = ({ links }) => {
 };
 
 UserLinks.propTypes = {
-  links: PropTypes.array,
+  links: PropTypes.object,
 };
 
 export default UserLinks;
