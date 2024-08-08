@@ -1,21 +1,12 @@
 import Search from "./Search/Search";
 import UserCard from "./UserCard/UserCard";
-import { useEffect, useState } from "react";
-import usersData from "../../assets/data/users.json";
+import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 import "./Home.css";
 
-const Home = () => {
-  const [users, setUsers] = useState([]);
+const Home = ({ users }) => {
   const [searchValue, setSearchValue] = useState("");
-
-  const loadUsers = () => {
-    setUsers(usersData);
-  };
-
-  useEffect(() => {
-    loadUsers();
-    console.log(users);
-  }, []);
+  const navigate = useNavigate();
 
   const filteredUserCards = users.filter((user) => {
     if (searchValue) {
@@ -25,16 +16,20 @@ const Home = () => {
   });
 
   const userCardComponents = filteredUserCards.map((user, i) => {
-    return <UserCard user={user} key={`user${i}`} />;
+    return (
+      <UserCard
+        user={user}
+        key={`user${i}`}
+        onClick={() => navigate(`/${user.name}`)}
+      />
+    );
   });
 
   return (
     <div className="home-container">
       <h1>Home</h1>
       <Search setSearchValue={setSearchValue} />
-      <div className="user-card-container">
-        {userCardComponents}
-      </div>
+      <div className="user-card-container">{userCardComponents}</div>
     </div>
   );
 };

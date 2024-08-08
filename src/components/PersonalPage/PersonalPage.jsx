@@ -1,32 +1,34 @@
+import PropTypes from "prop-types";
 import { useParams } from "react-router-dom";
 import "./PersonalPage.css";
+import {} from "module";
+import profileIcon from "../../assets/profile-icon.png";
+import UserLinks from "./Links/UserLinks";
 
-const PersonalPage = () => {
+const PersonalPage = ({ users }) => {
   let { userId } = useParams();
-  const links = [
-    "https://www.linkedin.com/feed/",
-    "https://github.com/",
-    "https://www.youtube.com/",
-  ];
-
-  const handleClick = (url) => {
-    window.location.href = url;
-  };
-
-  const buttons = links.map((link) => (
-    <button onClick={() => handleClick(link)}>Link</button>
-  ));
+  const user = users.find((user) => user.name === userId);
+  console.log(users);
+  const links = user?.links;
 
   return (
-    <div>
-      <h1>{userId}&apos;s Personal Page</h1>
-      <img
-        className="profile-pic"
-        src="https://cdn.pixabay.com/photo/2017/06/13/12/54/profile-2398783_1280.png"
-      />
-      <div>{buttons}</div>
-    </div>
+    <main className="body">
+      <div className="header">
+        <img className="profile-pic" src={profileIcon} />
+        <h1 id="title">{userId}&apos;s Personal Page</h1>
+      </div>
+      <div>
+        <UserLinks links={links} />
+      </div>
+    </main>
   );
+};
+
+PersonalPage.propTypes = {
+  user: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    links: PropTypes.arrayOf(PropTypes.object).isRequired,
+  }),
 };
 
 export default PersonalPage;

@@ -1,4 +1,42 @@
+#title {
+  color: beige;
+  font-size: 4rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
 .profile-pic {
-  height: 10rem;
-  width: 10rem;
+  height: 13rem;
+}
+
+.header {
+  background-image: url("../../assets/background.png");
+  padding: 2rem;
+}
+
+.body {
+  text-align: center;
+  background-color: #5b8e7d;
+  padding-bottom: 1rem;
+}
+
+.buttons {
+  width: 65%;
+  height: 6.5rem;
+  margin: 1rem auto;
+  border-radius: 2rem;
+  background-color: #8cb369;
+
+  /* Button title styling */
+  font-size: 2rem;
+  color: #243831;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  padding: 1rem 19rem;
+  font-weight: bold;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.buttons:hover {
+  background-color: #b6cfa0;
 }

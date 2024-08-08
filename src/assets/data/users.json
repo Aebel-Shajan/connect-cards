@@ -6,9 +6,9 @@
     "occupation": "Data Analyst",
     "description": "I like data, making things and pokemon (before gen v).",
     "links": {
-        "linkedin": "https://www.linkedin.com/in/aebel-shajan",
-        "github": "https://www.github.com/aebel-shajan",
-        "Portfolio": "https://www.aebel-shajan.github.io"
+      "Linkedin": "https://www.linkedin.com/in/aebel-shajan",
+      "Github": "https://www.github.com/aebel-shajan",
+      "Portfolio": "https://aebel-shajan.github.io"
     },
     "skills": ["Python", "Apache Spark", "Pandas"]
   },
@@ -19,9 +19,9 @@
     "occupation": "Walker 🚶‍♀️",
     "description": "I walk thats all i do.",
     "links": {
-        "linkedin": "https://www.linkedin.com/in/aebel-shajan",
-        "github": "https://www.github.com/aebel-shajan",
-        "Portfolio": "https://www.aebel-shajan.github.io"
+      "Linkedin": "https://www.linkedin.com/in/yeabsiran",
+      "Github": "https://www.github.com/aebel-shajan",
+      "Portfolio": "https://puginarug.com/"
     },
     "skills": ["React", "JavaScript", "Spring"]
   },
@@ -32,9 +32,9 @@
     "occupation": "Job Hunting",
     "description": "description less than 100 chars.",
     "links": {
-        "linkedin": "https://www.linkedin.com/in/aebel-shajan",
-        "github": "https://www.github.com/aebel-shajan",
-        "Portfolio": "https://www.aebel-shajan.github.io"
+      "Linkedin": "https://www.linkedin.com/in/kajanan-lingkeswaran",
+      "Github": "https://github.com/KajananGit",
+      "Portfolio": "https://longdogechallenge.com/"
     },
     "skills": ["Java", "Spring", "Postgres"]
   },
@@ -45,9 +45,9 @@
     "occupation": "Senior DevOps Engineer",
     "description": "Known for mastering system stability, ensuring operations for millions of years.",
     "links": {
-        "pokemon": "https://www.pokemon.com/uk/pokedex/rayquaza",
-        "github": "https://github.com/rayquaza",
-        "serebii": "https://www.serebii.net/pokedex-xy/384.shtml"
+      "Pokemon": "https://www.pokemon.com/uk/pokedex/rayquaza",
+      "Github": "https://github.com/rayquaza",
+      "Serebii": "https://www.serebii.net/pokedex-xy/384.shtml"
     },
     "skills": ["Docker", "Jenkins", "Kubernetes"]
   },
@@ -58,9 +58,9 @@
     "occupation": "Penetration Testing Lead",
     "description": "Born with the ability to defy breaches, it secures networks on powerful electromagnetic waves.",
     "links": {
-        "pokemon":"",
-        "github": "",
-        "serebii": ""
+      "Pokemon": "",
+      "Github": "",
+      "Serebii": ""
     },
     "skills": ["C++", "Kali", "Shell Script"]
   },
@@ -71,9 +71,9 @@
     "occupation": "AI/ML Architect",
     "description": "Make ai.",
     "links": {
-        "pokemon":"",
-        "github": "",
-        "serebii": ""
+      "Pokemon": "",
+      "Github": "",
+      "Serebii": ""
     },
     "skills": ["ChatGPT", "PyTorch", "Julia"]
   },
@@ -84,9 +84,9 @@
     "occupation": "Junior AWS Cloud Engineer",
     "description": "Literally just a buff naked dude floating on some clouds. I never understood why this was a pokemon.",
     "links": {
-        "pokemon":"",
-        "github": "",
-        "serebii": ""
+      "Pokemon": "",
+      "Github": "",
+      "Serebii": ""
     },
     "skills": ["AWS", "Alibaba Cloud", "Google Cloud"]
   },
@@ -97,9 +97,9 @@
     "occupation": "yes",
     "description": "???",
     "links": {
-        "??":"",
-        "?": "",
-        "?!": ""
+      "??": "",
+      "?": "",
+      "?!": ""
     },
     "skills": ["Wii", "3DS", "Gamecube"]
   }
