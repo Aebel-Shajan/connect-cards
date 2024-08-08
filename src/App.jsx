@@ -6,14 +6,20 @@ import usersData from "./assets/data/users.json";
 
 function App() {
   const [users, setUsers] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   const loadUsers = () => {
     setUsers(usersData);
+    setLoading(false);
   };
 
   useEffect(() => {
     loadUsers();
   }, []);
+
+  const LoadingComponent = () => {
+    return <div>Loading...</div>;
+  };  
 
   const appRoutes = createBrowserRouter([
     {
@@ -25,7 +31,7 @@ function App() {
         },
         {
           path: "/:userId",
-          element: <PersonalPage users={users} />,
+          element: !loading ? <PersonalPage users={users} /> : <LoadingComponent />,
         },
       ],
     },
