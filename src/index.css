@@ -3,3 +3,19 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.background {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  background: url(
+    https://fiddletwix.wordpress.com/wp-content/uploads/2017/02/pokemon-ep21-title.png
+  );
+  background-size: cover;
+  background-attachment: fixed;
+  filter: blur(8px);
+  z-index: -100;
+}
