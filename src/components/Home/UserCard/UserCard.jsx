@@ -67,6 +67,10 @@ const TypesComponent = ({ types }) => {
   );
 };
 
+TypesComponent.propTypes = {
+  types: PropTypes.arrayOf(PropTypes.string),
+};
+
 const MoveComponent = ({ move }) => {
   return (
     <div className="move-container">
@@ -74,6 +78,13 @@ const MoveComponent = ({ move }) => {
       <div className="move-name">{move["name"]}</div>
     </div>
   );
+};
+
+MoveComponent.propTypes = {
+  move: PropTypes.shape({
+    name: PropTypes.string,
+    type: PropTypes.arrayOf(PropTypes.string),
+  }),
 };
 
 const UserCard = ({ user, onClick }) => {
@@ -121,6 +132,7 @@ UserCard.propTypes = {
     skills: PropTypes.arrayOf(PropTypes.string),
     moves: PropTypes.arrayOf(PropTypes.object),
   }),
+  onClick: PropTypes.func,
 };
 
 export default UserCard;
