@@ -14,9 +14,12 @@
   border: solid rgb(228, 199, 9) 1rem;
   border-radius: 1rem;
   font-family: Arial, Helvetica, sans-serif;
-
+  
   display: flex;
   flex-direction: column;
+}
+.card-container:hover {
+  cursor: pointer;
 }
 
 .card-header-container {
