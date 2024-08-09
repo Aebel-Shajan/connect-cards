@@ -19,7 +19,7 @@ function App() {
 
   const LoadingComponent = () => {
     return <div>Loading...</div>;
-  };  
+  };
 
   const appRoutes = createBrowserRouter([
     {
@@ -31,7 +31,11 @@ function App() {
         },
         {
           path: "/:userId",
-          element: !loading ? <PersonalPage users={users} /> : <LoadingComponent />,
+          element: !loading ? (
+            <PersonalPage users={users} />
+          ) : (
+            <LoadingComponent />
+          ),
         },
       ],
     },

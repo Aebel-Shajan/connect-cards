@@ -23,7 +23,7 @@ const UserSkills = ({ skills }) => {
     skillComponents[i] = skillBadge;
   }
 
-  return <div className="card-skill-container">{skillComponents}</div>;
+  return skillComponents;
 };
 
 UserSkills.propTypes = {
