@@ -13,7 +13,6 @@ import {
 import { FaGear } from "react-icons/fa6";
 import TypeIcon from "./TypeIcon/TypeIcon";
 
-
 const typeReference = {
   data: {
     icon: <FaDatabase />,
@@ -59,32 +58,26 @@ function getTypeStyle(typeName) {
 const TypesComponent = ({ types }) => {
   return (
     <div className="move-type-container">
-      {
-        types.map((type, index) => {
-          return (
-            <TypeIcon
-              key={`move type${index}`}
-              typeStyle={getTypeStyle(type)} />
-          )
-        })
-      }
+      {types.map((type, index) => {
+        return (
+          <TypeIcon key={`move type${index}`} typeStyle={getTypeStyle(type)} />
+        );
+      })}
     </div>
-  )
-}
+  );
+};
 
 const MoveComponent = ({ move }) => {
   return (
     <div className="move-container">
       <TypesComponent types={move["type"]} />
-      <div className="move-name">
-        {move["name"]}
-      </div>
+      <div className="move-name">{move["name"]}</div>
     </div>
-  )
-}
+  );
+};
 
 const UserCard = ({ user, onClick }) => {
-  const cardTypeStyle = getTypeStyle(user.type)
+  const cardTypeStyle = getTypeStyle(user.type);
   return (
     <div
       className="card-container"
@@ -101,16 +94,14 @@ const UserCard = ({ user, onClick }) => {
         <img className="card-image" src={user.image} />
       </div>
       <div className="card-occupation-container">
-        <div className="card-occupation">
-          {user.occupation}
-        </div>
+        <div className="card-occupation">{user.occupation}</div>
       </div>
       <div className="card-description-container">
         {user.description.substring(0, 100)}
       </div>
       <div className="card-moves-container">
         {user.moves.map((move, index) => {
-          return <MoveComponent key={`index${index}`} move={move} />
+          return <MoveComponent key={`index${index}`} move={move} />;
         })}
       </div>
       <div className="card-skills-container">
@@ -128,7 +119,7 @@ UserCard.propTypes = {
     occupation: PropTypes.string,
     description: PropTypes.string,
     skills: PropTypes.arrayOf(PropTypes.string),
-    moves: PropTypes.arrayOf(PropTypes.object)
+    moves: PropTypes.arrayOf(PropTypes.object),
   }),
 };
 

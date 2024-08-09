@@ -84,7 +84,7 @@
     "occupation": "Senior DevOps Engineer",
     "description": "Known for mastering system stability, ensuring operations for millions of years.",
     "skills": ["Docker", "Jenkins", "Kubernetes"],
-    "moves" : [
+    "moves": [
       {
         "name": "Tackle",
         "type": ["normal"]
@@ -107,7 +107,7 @@
     "occupation": "Penetration Testing Lead",
     "description": "Born with the ability to defy breaches, it secures networks on powerful electromagnetic waves.",
     "skills": ["C++", "Kali", "Shell Script"],
-    "moves" : [
+    "moves": [
       {
         "name": "Tackle",
         "type": ["normal"]
@@ -130,7 +130,7 @@
     "occupation": "AI/ML Architect",
     "description": "Make ai.",
     "skills": ["ChatGPT", "PyTorch", "Julia"],
-    "moves" : [
+    "moves": [
       {
         "name": "Tackle",
         "type": ["normal"]
@@ -153,7 +153,7 @@
     "occupation": "Junior AWS Cloud Engineer",
     "description": "Literally just a buff naked dude floating on some clouds. I never understood why this was a pokemon.",
     "skills": ["AWS", "Alibaba Cloud", "Google Cloud"],
-    "moves" : [
+    "moves": [
       {
         "name": "Tackle",
         "type": ["normal"]
@@ -176,7 +176,7 @@
     "occupation": "yes",
     "description": "???",
     "skills": ["Wii", "3DS", "Gamecube"],
-    "moves" : [
+    "moves": [
       {
         "name": "Nap",
         "type": ["normal"]
