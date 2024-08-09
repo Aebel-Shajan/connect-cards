@@ -5,12 +5,29 @@
     "image": "https://i.pinimg.com/originals/06/a4/68/06a468cb80122f3d28831fe88f681d9d.png",
     "occupation": "Data Analyst",
     "description": "I like data, making things and pokemon (before gen v).",
+    "moves": [
+      {
+        "name": "Gym Data Analysis",
+        "link": "strong.streamlit.app",
+        "type": ["Data", "Frontend"]
+      },
+      {
+        "name": "Driftin Deliveries",
+        "link": "driftin-deliveries.vercel.app",
+        "type": ["Frontend"]
+      },
+      {
+        "name": "ChatGPT Scroll Minimap",
+        "link": "https://chromewebstore.google.com/detail/scroll-minimap-for-chatgp/apekbedjllgmacohbcckgipfhjddehkf",
+        "type": ["Frontend"]
+      }
+    ],
+    "skills": ["Python", "Apache Spark", "Pandas"],
     "links": {
       "Linkedin": "https://www.linkedin.com/in/aebel-shajan",
       "Github": "https://www.github.com/aebel-shajan",
       "Portfolio": "https://aebel-shajan.github.io"
-    },
-    "skills": ["Python", "Apache Spark", "Pandas"]
+    }
   },
   {
     "name": "Yabbi",
@@ -18,12 +35,27 @@
     "image": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/1009.png",
     "occupation": "Walker 🚶‍♀️",
     "description": "I walk thats all i do.",
+    "skills": ["React", "JavaScript", "Spring"],
+    "moves": [
+      {
+        "name": "Walk",
+        "type": ["normal"]
+      },
+      {
+        "name": "Nemovies",
+        "type": ["Frontend", "Backend"]
+      },
+      {
+        "name": "Connect Cards",
+        "link": "connect-cards.vercel.app",
+        "type": ["Frontend", "DevOps"]
+      }
+    ],
     "links": {
       "Linkedin": "https://www.linkedin.com/in/yeabsiran",
       "Github": "https://www.github.com/aebel-shajan",
       "Portfolio": "https://puginarug.com/"
-    },
-    "skills": ["React", "JavaScript", "Spring"]
+    }
   },
   {
     "name": "Kajanan",
@@ -31,12 +63,19 @@
     "image": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/137.png",
     "occupation": "Job Hunting",
     "description": "description less than 100 chars.",
+    "skills": ["Java", "Spring", "Postgres"],
+    "moves": [
+      {
+        "name": "Connect Cards",
+        "link": "connect-cards.vercel.app",
+        "type": ["Frontend", "DevOps"]
+      }
+    ],
     "links": {
       "Linkedin": "https://www.linkedin.com/in/kajanan-lingkeswaran",
       "Github": "https://github.com/KajananGit",
       "Portfolio": "https://longdogechallenge.com/"
-    },
-    "skills": ["Java", "Spring", "Postgres"]
+    }
   },
   {
     "name": "Rayquaza",
@@ -44,12 +83,22 @@
     "image": "https://wallpapers-clan.com/wp-content/uploads/2024/04/pokemon-rayquaza-epic-desktop-wallpaper-preview.jpg",
     "occupation": "Senior DevOps Engineer",
     "description": "Known for mastering system stability, ensuring operations for millions of years.",
+    "skills": ["Docker", "Jenkins", "Kubernetes"],
+    "moves" : [
+      {
+        "name": "Tackle",
+        "type": ["normal"]
+      },
+      {
+        "name": "Earthquake",
+        "type": ["Backend"]
+      }
+    ],
     "links": {
       "Pokemon": "https://www.pokemon.com/uk/pokedex/rayquaza",
       "Github": "https://github.com/rayquaza",
       "Serebii": "https://www.serebii.net/pokedex-xy/384.shtml"
-    },
-    "skills": ["Docker", "Jenkins", "Kubernetes"]
+    }
   },
   {
     "name": "Magnemite",
@@ -57,12 +106,22 @@
     "image": "https://static.wikia.nocookie.net/pokemon/images/6/66/Head_of_Security%27s_Magnemite.png",
     "occupation": "Penetration Testing Lead",
     "description": "Born with the ability to defy breaches, it secures networks on powerful electromagnetic waves.",
+    "skills": ["C++", "Kali", "Shell Script"],
+    "moves" : [
+      {
+        "name": "Tackle",
+        "type": ["normal"]
+      },
+      {
+        "name": "Earthquake",
+        "type": ["Backend"]
+      }
+    ],
     "links": {
       "Pokemon": "",
       "Github": "",
       "Serebii": ""
-    },
-    "skills": ["C++", "Kali", "Shell Script"]
+    }
   },
   {
     "name": "Espeon",
@@ -70,12 +129,22 @@
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyjVxbJna2oxHyNQWiXpEGIjpWyrVSc436Hg&s",
     "occupation": "AI/ML Architect",
     "description": "Make ai.",
+    "skills": ["ChatGPT", "PyTorch", "Julia"],
+    "moves" : [
+      {
+        "name": "Tackle",
+        "type": ["normal"]
+      },
+      {
+        "name": "Earthquake",
+        "type": ["Backend"]
+      }
+    ],
     "links": {
       "Pokemon": "",
       "Github": "",
       "Serebii": ""
-    },
-    "skills": ["ChatGPT", "PyTorch", "Julia"]
+    }
   },
   {
     "name": "Tornadus",
@@ -83,12 +152,22 @@
     "image": "https://static.wikia.nocookie.net/vsbattles/images/b/b4/Tornadus2018.png",
     "occupation": "Junior AWS Cloud Engineer",
     "description": "Literally just a buff naked dude floating on some clouds. I never understood why this was a pokemon.",
+    "skills": ["AWS", "Alibaba Cloud", "Google Cloud"],
+    "moves" : [
+      {
+        "name": "Tackle",
+        "type": ["normal"]
+      },
+      {
+        "name": "Earthquake",
+        "type": ["Backend"]
+      }
+    ],
     "links": {
       "Pokemon": "",
       "Github": "",
       "Serebii": ""
-    },
-    "skills": ["AWS", "Alibaba Cloud", "Google Cloud"]
+    }
   },
   {
     "name": "Pokechu",
@@ -96,11 +175,25 @@
     "image": "/pokechu.png",
     "occupation": "yes",
     "description": "???",
+    "skills": ["Wii", "3DS", "Gamecube"],
+    "moves" : [
+      {
+        "name": "Nap",
+        "type": ["normal"]
+      },
+      {
+        "name": "Uber eats",
+        "type": ["normal"]
+      },
+      {
+        "name": "Chatgpt it",
+        "type": ["normal", "ai"]
+      }
+    ],
     "links": {
       "??": "",
       "?": "",
       "?!": ""
-    },
-    "skills": ["Wii", "3DS", "Gamecube"]
+    }
   }
 ]
