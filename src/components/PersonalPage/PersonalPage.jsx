@@ -12,15 +12,15 @@ const PersonalPage = ({ users }) => {
   const links = user?.links;
 
   return (
-    <main className="body">
-      <div className="header">
+    <div className="container">
+      <header>
         <img className="profile-pic" src={profileIcon} />
         <h1 id="title">{userId}&apos;s Personal Page</h1>
-      </div>
-      <div>
+      </header>
+      <section>
         <UserLinks links={links} />
-      </div>
-    </main>
+      </section>
+    </div>
   );
 };
 
