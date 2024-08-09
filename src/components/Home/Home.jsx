@@ -27,9 +27,16 @@ const Home = ({ users }) => {
 
   return (
     <div className="home-container">
-      <h1>Home</h1>
-      <Search setSearchValue={setSearchValue} />
-      <div className="user-card-container">{userCardComponents}</div>
+      <div className="background"></div>
+      <div className="nav-container">
+        <h1>Farewell BNTA </h1>
+        {/* <Search setSearchValue={setSearchValue} /> */}
+      </div>
+      <div className="user-card-container">
+        
+        {userCardComponents}
+        
+        </div>
     </div>
   );
 };
