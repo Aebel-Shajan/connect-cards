@@ -4,7 +4,7 @@
   padding-bottom: 1rem;
 
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 2fr;
 }
 
 #title {
@@ -24,11 +24,19 @@ header {
 
 section {
   grid-column: 2;
+  padding: 1rem 2rem 1rem 3rem;
+}
+
+article {
+  grid-column: 1;
+  grid-row: 2;
+  padding-top: 2rem;
+  justify-self: center;
 }
 
 .buttons {
-  height: 6.5rem;
-  margin: 1rem;
+  height: 7.5rem;
+  margin: 1.2rem;
   border-radius: 2rem;
   background-color: #8cb369;
 
@@ -42,7 +50,6 @@ section {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  gap: 10px;
 }
 
 .buttons:hover {

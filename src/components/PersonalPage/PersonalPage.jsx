@@ -4,13 +4,13 @@ import "./PersonalPage.css";
 import {} from "module";
 import profileIcon from "../../assets/profile-icon.png";
 import UserLinks from "./Links/UserLinks";
+import UserCard from "../Home/UserCard/UserCard";
 
 const PersonalPage = ({ users }) => {
   let { userId } = useParams();
   const user = users.find((user) => user.name === userId);
-  console.log(users);
   const links = user?.links;
-
+  console.log(user)
   return (
     <div className="container">
       <header>
@@ -20,6 +20,9 @@ const PersonalPage = ({ users }) => {
       <section>
         <UserLinks links={links} />
       </section>
+      <article>
+        <UserCard user={user} />
+      </article>
     </div>
   );
 };
