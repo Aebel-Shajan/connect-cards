@@ -16,25 +16,25 @@ const Home = ({ users }) => {
   const skillsOptions = ["Java", "Python", "JavaScript", "HTML", "CSS", "React", "SQL", "PostgreSQL", "AWS", "Azure", "MS Office", "Spring"];
   const typeOptions = ["Data", "Backend", "Frontend", "Devops", "Cybersecurity", "Cloud", "AI", "Normal"];
 
-  const filteredUserCards = users.filter((user) => {
-    if (searchValue && skillsFilterValue && typesFilterValue) {
-      return user.name.toLowerCase().startsWith(searchValue.toLowerCase()) && user.skills.includes(skillsFilterValue) && user.type.includes(typesFilterValue);
-    }
-
-    if(searchValue) {
+  let filteredUserCards = users
+  filteredUserCards = filteredUserCards.filter((user) => {
+    if (searchValue) {
       return user.name.toLowerCase().startsWith(searchValue.toLowerCase())
     }
-
+    return true
+  })
+  filteredUserCards = filteredUserCards.filter((user) => {
     if(skillsFilterValue) {
       return user.skills.includes(skillsFilterValue);
     }
-
+    return true
+  })
+  filteredUserCards = filteredUserCards.filter((user) => {
     if(typesFilterValue) {
       return user.type.includes(typesFilterValue);
     }
-
-    return true;
-  });
+    return true
+  })
 
   const userCardComponents = filteredUserCards.map((user, i) => {
     return (
