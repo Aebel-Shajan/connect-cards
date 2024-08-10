@@ -16,6 +16,6 @@
   );
   background-size: cover;
   background-attachment: fixed;
-  filter: blur(8px);
+  filter: blur(4px);
   z-index: -100;
 }

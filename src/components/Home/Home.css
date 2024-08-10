@@ -2,11 +2,12 @@
 
 .nav-container {
   width: 100%;
-  height: 4rem;
+  height: fit-content;
 
   font-family: "Permanent Marker", Arial, Helvetica, sans-serif;
   color: white;
   font-size: 2rem;
+  text-align: center;
 
   display: flex;
   align-items: center;
