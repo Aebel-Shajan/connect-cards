@@ -9,6 +9,12 @@
   align-items: center;
 }
 
+.button-container {
+  display: flex;
+  width: fit-content;
+  gap: 1rem;
+}
+
 button {
   padding: 0.5rem 1rem;
   border-radius: 1rem;
