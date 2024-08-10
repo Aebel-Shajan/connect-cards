@@ -1,9 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker');
+
+.nav-container {
+  width: 100%;
+  height: fit-content;
+
+  font-family: "Permanent Marker", Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 .user-card-container {
   width: 100%;
   min-height: 100vh;
   padding: 2rem;
-
-  background: linear-gradient(to bottom, #2b5876, #4e4376);
 
   display: flex;
   justify-content: center;

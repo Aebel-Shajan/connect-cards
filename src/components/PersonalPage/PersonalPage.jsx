@@ -1,34 +1,59 @@
 import PropTypes from "prop-types";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import "./PersonalPage.css";
 import {} from "module";
-import profileIcon from "../../assets/profile-icon.png";
-import UserLinks from "./Links/UserLinks";
+import UserCard from "../Home/UserCard/UserCard";
+import { useCallback, useRef } from "react";
+import { toPng } from "html-to-image";
+import { IoMdDownload } from "react-icons/io";
+import { FaHome } from "react-icons/fa";
 
 const PersonalPage = ({ users }) => {
+  const navigate = useNavigate()
   let { userId } = useParams();
   const user = users.find((user) => user.name === userId);
-  console.log(users);
-  const links = user?.links;
+
+  const ref = useRef(null)
+
+  const onButtonClick = useCallback(() => {
+    if (ref.current === null) {
+      return
+    }
+
+    toPng(ref.current, { cacheBust: true, })
+      .then((dataUrl) => {
+        const link = document.createElement('a')
+        link.download = `${user.name}-connect-card.png`
+        link.href = dataUrl
+        link.click()
+      })
+      .catch((err) => {
+        console.log(err)
+        alert("Failed to download. This is most likely caused by using external link as user card image.")
+      })
+  }, [ref])
 
   return (
-    <main className="body">
-      <div className="header">
-        <img className="profile-pic" src={profileIcon} />
-        <h1 id="title">{userId}&apos;s Personal Page</h1>
+    <div className="personal-page-container">
+      <div className="background"></div>
+      <div ref={ref}>
+      {/* DOM nodes you want to convert to PNG */}
+        <UserCard user={user} />
       </div>
-      <div>
-        <UserLinks links={links} />
+      <div className="button-container">
+        <button onClick={() => navigate(`/`)}>
+        <FaHome /> See other cards
+        </button>
+        <button onClick={onButtonClick}>
+          <IoMdDownload /> Download card
+        </button>
       </div>
-    </main>
+    </div>
   );
 };
 
 PersonalPage.propTypes = {
-  user: PropTypes.shape({
-    name: PropTypes.string.isRequired,
-    links: PropTypes.arrayOf(PropTypes.object).isRequired,
-  }),
+  users: PropTypes.array
 };
 
 export default PersonalPage;
