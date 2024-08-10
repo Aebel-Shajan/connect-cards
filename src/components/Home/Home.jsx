@@ -3,27 +3,34 @@ import UserCard from "./UserCard/UserCard";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import "./Home.css";
-import SkillsFilter from "./Filter/SkillsFilter";
+import Filter from "./Filter/Filter";
 
 const Home = ({ users }) => {
 
   const [searchValue, setSearchValue] = useState("");
-  const [filterValue, setFilterValue] = useState("");
+  const [skillsFilterValue, setSkillsFilterValue] = useState("");
+  const [typesFilterValue, setTypesFilterValue] = useState("");
 
   const navigate = useNavigate();
 
+  const skillsOptions = ["Java", "Python", "JavaScript", "HTML", "CSS", "React", "SQL", "PostgreSQL", "AWS", "Azure", "MS Office", "Spring"];
+  const typeOptions = ["Data", "Backend", "Frontend", "Devops", "Cybersecurity", "Cloud", "AI", "Normal"];
 
   const filteredUserCards = users.filter((user) => {
-    if (searchValue && filterValue) {
-      return user.name.toLowerCase().startsWith(searchValue.toLowerCase()) && user.skills.includes(filterValue);
+    if (searchValue && skillsFilterValue && typesFilterValue) {
+      return user.name.toLowerCase().startsWith(searchValue.toLowerCase()) && user.skills.includes(skillsFilterValue) && user.type.includes(typesFilterValue);
     }
 
     if(searchValue) {
       return user.name.toLowerCase().startsWith(searchValue.toLowerCase())
     }
 
-    if(filterValue) {
-      return user.skills.includes(filterValue);
+    if(skillsFilterValue) {
+      return user.skills.includes(skillsFilterValue);
+    }
+
+    if(typesFilterValue) {
+      return user.type.includes(typesFilterValue);
     }
 
     return true;
@@ -43,7 +50,9 @@ const Home = ({ users }) => {
     <div className="home-container">
       <h1>Home</h1>
       <Search setSearchValue={setSearchValue} />
-      <SkillsFilter setFilterValue={setFilterValue} />
+      <Filter filterOptions={skillsOptions} setFilterValue={setSkillsFilterValue} />
+      <Filter filterOptions={typeOptions} setFilterValue={setTypesFilterValue} />
+      
       <div className="user-card-container">{userCardComponents}</div>
     </div>
   );

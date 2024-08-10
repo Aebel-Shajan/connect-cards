@@ -102,5 +102,44 @@
       "?!": ""
     },
     "skills": ["Wii", "3DS", "Gamecube"]
+  },
+  {
+    "name": "Jeff",
+    "type": "Backend",
+    "image": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/137.png",
+    "occupation": "Backend Engineer",
+    "description": "description less than 100 chars.",
+    "links": {
+      "Linkedin": "https://www.linkedin.com/in/kajanan-lingkeswaran",
+      "Github": "https://github.com/KajananGit",
+      "Portfolio": "https://longdogechallenge.com/"
+    },
+    "skills": ["Java", "SQL", "Postgres"]
+  },
+  {
+    "name": "John",
+    "type": "Frontend",
+    "image": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/137.png",
+    "occupation": "Backend Engineer",
+    "description": "description less than 100 chars.",
+    "links": {
+      "Linkedin": "https://www.linkedin.com/in/kajanan-lingkeswaran",
+      "Github": "https://github.com/KajananGit",
+      "Portfolio": "https://longdogechallenge.com/"
+    },
+    "skills": ["JavaScript", "SQL", "React"]
+  },
+  {
+    "name": "Johnathan",
+    "type": "Backend",
+    "image": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/137.png",
+    "occupation": "Backend Engineer",
+    "description": "description less than 100 chars.",
+    "links": {
+      "Linkedin": "https://www.linkedin.com/in/kajanan-lingkeswaran",
+      "Github": "https://github.com/KajananGit",
+      "Portfolio": "https://longdogechallenge.com/"
+    },
+    "skills": ["Spring", "SQL", "Python"]
   }
 ]
