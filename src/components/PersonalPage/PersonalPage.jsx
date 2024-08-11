@@ -6,23 +6,36 @@ import profileIcon from "../../assets/profile-icon.png";
 import UserLinks from "./Links/UserLinks";
 import MyProjects from "./MyProjects";
 
+import UserCard from "../Home/UserCard/UserCard";
+import NotFoundPage from "../NotFoundPage/NotFoundPage";
+
 const PersonalPage = ({ users }) => {
   let { userId } = useParams();
-  const user = users.find((user) => user.name === userId);
-  const links = user.links;
+  const user = users.find((user) => user.name.toLowerCase() === userId);
 
+  if (!user) {
+    return <NotFoundPage />
+  }
 
+  const links = user?.links;
+  console.log(user)
   return (
-    <main className="body">
-      <div className="header">
+    <div className="container">
+      <header>
         <img className="profile-pic" src={profileIcon} />
         <h1 id="title">{userId}&apos;s Personal Page</h1>
-      </div>
-      <div>
+      </header>
+      <section>
         <UserLinks links={links} />
-        <MyProjects links={links} /> 
+        <MyProjects links={links} />
       </div>
     </main>
+
+      </section>
+      <article>
+        <UserCard user={user} />
+      </article>
+    </div>
   );
 };
 

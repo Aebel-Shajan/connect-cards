@@ -39,6 +39,7 @@
   border: solid rgb(228, 199, 9) 0.45rem;
   background: radial-gradient(circle, rgb(160, 186, 177), rgb(65, 57, 57));
   box-shadow: 4px 4px 13px 0px rgba(0, 0, 0, 0.75);
+  cursor: pointer;
 
   align-self: center;
 }
@@ -103,8 +104,8 @@
   scale: 0.6;
 
   display: flex;
-  justify-content: space-evenly;
-  gap: 0.1rem;
+  justify-content:left;
+  gap: 0.3rem;
 }
 
 .move-name {
