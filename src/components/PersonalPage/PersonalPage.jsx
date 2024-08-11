@@ -14,11 +14,11 @@ const PersonalPage = ({ users }) => {
   const user = users.find((user) => user.name.toLowerCase() === userId);
 
   if (!user) {
-    return <NotFoundPage />
+    return <NotFoundPage />;
   }
 
   const links = user?.links;
-  console.log(user)
+  console.log(user);
   return (
     <div className="container">
       <header>
@@ -31,7 +31,7 @@ const PersonalPage = ({ users }) => {
       <article>
         <UserCard user={user} />
       </article>
-        <MyProjects links={links} />
+      <MyProjects links={links} />
     </div>
   );
 };

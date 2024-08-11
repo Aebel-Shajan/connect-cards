@@ -6,35 +6,56 @@ import "./Home.css";
 import Filter from "./Filter/Filter";
 
 const Home = ({ users }) => {
-
   const [searchValue, setSearchValue] = useState("");
   const [skillsFilterValue, setSkillsFilterValue] = useState("");
   const [typesFilterValue, setTypesFilterValue] = useState("");
 
   const navigate = useNavigate();
 
-  const skillsOptions = ["Java", "Python", "JavaScript", "HTML", "CSS", "React", "SQL", "PostgreSQL", "AWS", "Azure", "MS Office", "Spring"];
-  const typeOptions = ["Data", "Backend", "Frontend", "Devops", "Cybersecurity", "Cloud", "AI", "Normal"];
+  const skillsOptions = [
+    "Java",
+    "Python",
+    "JavaScript",
+    "HTML",
+    "CSS",
+    "React",
+    "SQL",
+    "PostgreSQL",
+    "AWS",
+    "Azure",
+    "MS Office",
+    "Spring",
+  ];
+  const typeOptions = [
+    "Data",
+    "Backend",
+    "Frontend",
+    "Devops",
+    "Cybersecurity",
+    "Cloud",
+    "AI",
+    "Normal",
+  ];
 
-  let filteredUserCards = users
+  let filteredUserCards = users;
   filteredUserCards = filteredUserCards.filter((user) => {
     if (searchValue) {
-      return user.name.toLowerCase().startsWith(searchValue.toLowerCase())
+      return user.name.toLowerCase().startsWith(searchValue.toLowerCase());
     }
-    return true
-  })
+    return true;
+  });
   filteredUserCards = filteredUserCards.filter((user) => {
-    if(skillsFilterValue) {
+    if (skillsFilterValue) {
       return user.skills.includes(skillsFilterValue);
     }
-    return true
-  })
+    return true;
+  });
   filteredUserCards = filteredUserCards.filter((user) => {
-    if(typesFilterValue) {
+    if (typesFilterValue) {
       return user.type.includes(typesFilterValue);
     }
-    return true
-  })
+    return true;
+  });
 
   const userCardComponents = filteredUserCards.map((user, i) => {
     return (
@@ -50,9 +71,15 @@ const Home = ({ users }) => {
     <div className="home-container">
       <h1>Home</h1>
       <Search setSearchValue={setSearchValue} />
-      <Filter filterOptions={skillsOptions} setFilterValue={setSkillsFilterValue} />
-      <Filter filterOptions={typeOptions} setFilterValue={setTypesFilterValue} />
-      
+      <Filter
+        filterOptions={skillsOptions}
+        setFilterValue={setSkillsFilterValue}
+      />
+      <Filter
+        filterOptions={typeOptions}
+        setFilterValue={setTypesFilterValue}
+      />
+
       <div className="user-card-container">{userCardComponents}</div>
     </div>
   );
