@@ -12,7 +12,6 @@ import { CgPokemon } from "react-icons/cg";
 import "./UserLinks.css";
 
 const UserLinks = ({ links }) => {
-  console.log(links);
   let linkComponents = [];
   const iconReference = {
     linkedin: <FaLinkedin />,

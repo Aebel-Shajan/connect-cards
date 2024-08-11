@@ -4,23 +4,26 @@ import "./PersonalPage.css";
 import {} from "module";
 import profileIcon from "../../assets/profile-icon.png";
 import UserLinks from "./Links/UserLinks";
+import UserCard from "../Home/UserCard/UserCard";
 
 const PersonalPage = ({ users }) => {
   let { userId } = useParams();
   const user = users.find((user) => user.name === userId);
-  console.log(users);
   const links = user?.links;
-
+  console.log(user)
   return (
-    <main className="body">
-      <div className="header">
+    <div className="container">
+      <header>
         <img className="profile-pic" src={profileIcon} />
         <h1 id="title">{userId}&apos;s Personal Page</h1>
-      </div>
-      <div>
+      </header>
+      <section>
         <UserLinks links={links} />
-      </div>
-    </main>
+      </section>
+      <article>
+        <UserCard user={user} />
+      </article>
+    </div>
   );
 };
 
