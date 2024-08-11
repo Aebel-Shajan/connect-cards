@@ -9,7 +9,7 @@ import NotFoundPage from "../NotFoundPage/NotFoundPage";
 
 const PersonalPage = ({ users }) => {
   let { userId } = useParams();
-  const user = users.find((user) => user.name === userId);
+  const user = users.find((user) => user.name.toLowerCase() === userId);
 
   if (!user) {
     return <NotFoundPage />
