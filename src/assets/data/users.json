@@ -2,7 +2,7 @@
   {
     "name": "Anna",
     "type": "Frontend",
-    "image": "",
+    "image": "/anna.png",
     "occupation": "Former Trainer",
     "description": "",
     "moves": [
@@ -27,7 +27,7 @@
   {
     "name": "Colin",
     "type": "Frontend",
-    "image": "",
+    "image": "/colin.png",
     "occupation": "Former Trainer",
     "description": "",
     "moves": [
@@ -52,7 +52,7 @@
   {
     "name": "Richard",
     "type": "Devops",
-    "image": "",
+    "image": "/richard.png",
     "occupation": "Former Trainer",
     "description": "",
     "moves": [
@@ -77,7 +77,7 @@
   {
     "name": "Thibyaa",
     "type": "Frontend",
-    "image": "",
+    "image": "/thibyaa.png",
     "occupation": "Software Engineer",
     "description": "",
     "moves": [
@@ -100,9 +100,9 @@
     "skills": ["React", "Python", "Slack"]
   },
   {
-    "name": "Zsolt",
+    "name": "Zsolts",
     "type": "Backend",
-    "image": "",
+    "image": "/zsolts.png",
     "occupation": "Former Trainer",
     "description": "",
     "moves": [
@@ -127,8 +127,33 @@
   {
     "name": "Phil",
     "type": "Normal",
-    "image": "",
-    "occupation": "Human r",
+    "image": "/phil.png",
+    "occupation": "Human",
+    "description": "",
+    "moves": [
+      {
+        "name": "",
+        "link": "",
+        "type": []
+      },
+      {
+        "name": "",
+        "link": "",
+        "type": []
+      },
+      {
+        "name": "",
+        "link": "",
+        "type": []
+      }
+    ],
+    "skills": ["Slack", "Zoom", "LinkedIn"]
+  },
+  {
+    "name": "Lewis",
+    "type": "Normal",
+    "image": "/lewis.png",
+    "occupation": "Human",
     "description": "",
     "moves": [
       {
