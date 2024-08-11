@@ -28,9 +28,6 @@ const PersonalPage = ({ users }) => {
       <section>
         <UserLinks links={links} />
         <MyProjects links={links} />
-      </div>
-    </main>
-
       </section>
       <article>
         <UserCard user={user} />
