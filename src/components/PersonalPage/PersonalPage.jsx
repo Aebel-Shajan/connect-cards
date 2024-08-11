@@ -5,10 +5,16 @@ import {} from "module";
 import profileIcon from "../../assets/profile-icon.png";
 import UserLinks from "./Links/UserLinks";
 import UserCard from "../Home/UserCard/UserCard";
+import NotFoundPage from "../NotFoundPage/NotFoundPage";
 
 const PersonalPage = ({ users }) => {
   let { userId } = useParams();
   const user = users.find((user) => user.name === userId);
+
+  if (!user) {
+    return <NotFoundPage />
+  }
+
   const links = user?.links;
   console.log(user)
   return (
