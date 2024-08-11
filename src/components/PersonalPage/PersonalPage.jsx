@@ -27,11 +27,11 @@ const PersonalPage = ({ users }) => {
       </header>
       <section>
         <UserLinks links={links} />
-        <MyProjects links={links} />
       </section>
       <article>
         <UserCard user={user} />
       </article>
+        <MyProjects links={links} />
     </div>
   );
 };

@@ -21,7 +21,9 @@ const MyProjects = ( {links} ) => {
     const mappedProjects = projectRepos.map((repo) => {
         return (
             <div key={repo.id} className="project" >
-                <img className="repo-icon" src={repoIcon}/>
+                <a href={repo.html_url}>
+                    <img className="repo-icon" src={repoIcon} />
+                </a>
                 <ul key={repo.id} id="repo-title">{repo.name}</ul>
             </div>
         );
