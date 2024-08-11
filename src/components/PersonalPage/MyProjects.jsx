@@ -1,4 +1,6 @@
 import { useState, useEffect } from "react";
+import repoIcon from "../../assets/repo-icon.png";
+import "./MyProjects.css";
 
 const MyProjects = ( {links} ) => {
     const [projectRepos, setProjectRepos] = useState([]);
@@ -16,7 +18,14 @@ const MyProjects = ( {links} ) => {
         setProjectRepos(githubRepos);
     }
 
-    const mappedProjects = projectRepos.map((repo) => <li key={repo.id}>{repo.name}</li>)
+    const mappedProjects = projectRepos.map((repo) => {
+        return (
+            <div key={repo.id} className="project" >
+                <img className="repo-icon" src={repoIcon}/>
+                <ul key={repo.id} id="repo-title">{repo.name}</ul>
+            </div>
+        );
+    })
 
     useEffect(() => {
         getProjectRepos()
@@ -25,7 +34,7 @@ const MyProjects = ( {links} ) => {
     return ( 
         <>
             <h1>My Projects:</h1>
-            <div>{mappedProjects}</div>
+            <div className="project-container">{mappedProjects}</div>
         </>
         
      );
