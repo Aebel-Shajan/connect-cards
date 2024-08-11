@@ -4,6 +4,7 @@ import "./PersonalPage.css";
 import {} from "module";
 import profileIcon from "../../assets/profile-icon.png";
 import UserLinks from "./Links/UserLinks";
+import MyProjects from "./MyProjects";
 
 const PersonalPage = ({ users }) => {
   let { userId } = useParams();
@@ -19,6 +20,7 @@ const PersonalPage = ({ users }) => {
       </div>
       <div>
         <UserLinks links={links} />
+        <MyProjects links={links} /> 
       </div>
     </main>
   );
