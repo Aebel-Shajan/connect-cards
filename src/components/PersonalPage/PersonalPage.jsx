@@ -9,8 +9,8 @@ import MyProjects from "./MyProjects";
 const PersonalPage = ({ users }) => {
   let { userId } = useParams();
   const user = users.find((user) => user.name === userId);
-  console.log(users);
-  const links = user?.links;
+  const links = user.links;
+
 
   return (
     <main className="body">
