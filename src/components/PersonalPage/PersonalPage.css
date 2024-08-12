@@ -55,3 +55,28 @@ article {
 .buttons:hover {
   background-color: #b6cfa0;
 }
+
+#back-button {
+  color: #1c412e;
+  font-weight: bold;
+  font-size: medium;
+  background-color:#5b8e7d;
+  height: 2.3rem;
+  width: 10%;
+  border-radius: 0.6rem;
+  border-color: beige;
+  border-style:inherit;
+}
+
+#back-button:hover {
+  background-color: #bfebdd;
+}
+
+#back-button:active {
+  transform: translateY(2px);
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+}
