@@ -37,9 +37,9 @@ const TypeMapping = {
 };
 
 function getTypeStyle(typeName) {
-  const typeStyle = TypeMapping[typeName]
+  const typeStyle = TypeMapping[typeName.toLowerCase().replaceAll(" ", "")]
   if (typeStyle) {
-    return TypeMapping[typeName.toLowerCase()];
+    return typeStyle;
   }
   return TypeMapping["normal"];
 }
