@@ -10,3 +10,17 @@
   gap: 2rem;
   flex-wrap: wrap;
 }
+
+h1 {
+  background-color: #2b5876;
+  text-align: center;
+  font-size: 60px;
+}
+
+.filter-container {
+  background-color: #2b5876;
+  display: flex;
+  justify-content: center;
+}
+
+

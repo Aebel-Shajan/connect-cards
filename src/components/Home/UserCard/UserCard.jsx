@@ -43,14 +43,13 @@ const UserCard = ({ user, onClick }) => {
       className="card-container"
       style={{
         "--type-color-transparent": cardTypeStyle["color"] + "88",
-      }}   >
+      }}
+    >
       <div className="card-header-container">
         <div className="card-title">{user.name}</div>
         <TypeIcon typeStyle={cardTypeStyle} />
       </div>
-      <div 
-        className="card-image-container"
-        onClick={onClick}>
+      <div className="card-image-container" onClick={onClick}>
         <img className="card-image" src={user.image} />
       </div>
       <div className="card-occupation-container">
