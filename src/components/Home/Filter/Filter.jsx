@@ -10,23 +10,6 @@ const Filter = ({ filterOptions, setFilterValue }) => {
     );
   });
 
-  return (
-    <>
-      <section className="skillsFilter">
-        <select
-          className="filter_selection"
-          defaultValue="select-skill"
-          onChange={(event) => setFilterValue(event.target.value)}
-        >
-          <option value={""}> All </option>
-          {filters}
-        </select>
-      </section>
-    </>
-  );
-};
-
-    
     return (  
         <>
         <section className="skillsFilter-container">
