@@ -4,6 +4,8 @@ import "./PersonalPage.css";
 import {} from "module";
 import profileIcon from "../../assets/profile-icon.png";
 import UserLinks from "./Links/UserLinks";
+import MyProjects from "./MyProjects";
+
 import UserCard from "../Home/UserCard/UserCard";
 import NotFoundPage from "../NotFoundPage/NotFoundPage";
 
@@ -12,12 +14,12 @@ const PersonalPage = ({ users }) => {
   const user = users.find((user) => user.name.toLowerCase() === userId);
 
   if (!user) {
-    return <NotFoundPage />
+    return <NotFoundPage />;
   }
 
   const userName = user.name[0].toUpperCase() + user.name.substring(1);
   const links = user?.links;
-  console.log(user)
+  console.log(user);
   return (
     <div className="container">
       <header>
@@ -30,6 +32,7 @@ const PersonalPage = ({ users }) => {
       <article>
         <UserCard user={user} />
       </article>
+      <MyProjects links={links} />
     </div>
   );
 };
