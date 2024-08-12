@@ -23,12 +23,10 @@ const PersonalPage = ({ users }) => {
         <img className="profile-pic" src={profileIcon} />
         <h1 id="title">{userId}&apos;s Personal Page</h1>
       </header>
-      <section>
-        <UserLinks links={links} />
-      </section>
-      <article>
+      <div className="user-info-container">
         <UserCard user={user} />
-      </article>
+        <UserLinks links={links} />
+      </div>
     </div>
   );
 };

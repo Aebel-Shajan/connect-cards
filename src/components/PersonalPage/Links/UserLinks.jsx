@@ -13,7 +13,7 @@ const UserLinks = ({ links }) => {
     const linkName = Object.keys(links)[i];
     linkComponents[i] = (
       <button
-        className="buttons"
+        className="link"
         key={`link${i}`}
         onClick={() => handleClick(links[linkName])}
       >
@@ -23,7 +23,11 @@ const UserLinks = ({ links }) => {
     );
   }
 
-  return <div className="card-link-container">{linkComponents}</div>;
+  return (
+    <div className="link-container">
+      {linkComponents}
+    </div>
+  )
 };
 
 UserLinks.propTypes = {
