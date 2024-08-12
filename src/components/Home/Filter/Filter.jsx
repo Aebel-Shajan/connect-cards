@@ -1,3 +1,5 @@
+import "./Filter.css";
+
 const Filter = ({ filterOptions, setFilterValue }) => {
     
         
@@ -10,8 +12,8 @@ const Filter = ({ filterOptions, setFilterValue }) => {
     
     return (  
         <>
-        <section className="skillsFilter">
-            <select className="filter_selection" 
+        <section className="skillsFilter-container">
+            <select className="filter-selection" 
                     defaultValue="select-skill" 
                     onChange={(event) => setFilterValue(event.target.value)} 
             >

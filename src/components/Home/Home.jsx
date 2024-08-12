@@ -17,6 +17,7 @@ const Home = ({ users }) => {
   const typeOptions = ["Data", "Backend", "Frontend", "Devops", "Cybersecurity", "Cloud", "AI", "Normal"];
 
   let filteredUserCards = users
+  
   filteredUserCards = filteredUserCards.filter((user) => {
     if (searchValue) {
       return user.name.toLowerCase().startsWith(searchValue.toLowerCase())
@@ -50,9 +51,10 @@ const Home = ({ users }) => {
     <div className="home-container">
       <h1>Home</h1>
       <Search setSearchValue={setSearchValue} />
-      <Filter filterOptions={skillsOptions} setFilterValue={setSkillsFilterValue} />
-      <Filter filterOptions={typeOptions} setFilterValue={setTypesFilterValue} />
-      
+      <div className="filter-container">
+        <Filter filterOptions={skillsOptions} setFilterValue={setSkillsFilterValue} />
+        <Filter filterOptions={typeOptions} setFilterValue={setTypesFilterValue} />
+      </div>
       <div className="user-card-container">{userCardComponents}</div>
     </div>
   );
