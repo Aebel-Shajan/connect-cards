@@ -1,3 +1,5 @@
+import "./Filter.css";
+
 const Filter = ({ filterOptions, setFilterValue }) => {
   const filters = filterOptions.map((filterOption) => {
     return (
@@ -8,21 +10,20 @@ const Filter = ({ filterOptions, setFilterValue }) => {
     );
   });
 
-  return (
-    <>
-      <section className="skillsFilter">
-        <select
-          className="filter_selection"
-          defaultValue="select-skill"
-          onChange={(event) => setFilterValue(event.target.value)}
-        >
-          <option value={""}> All </option>
-          {filters}
-        </select>
-      </section>
-    </>
-  );
-};
+    return (  
+        <>
+        <section className="skillsFilter-container">
+            <select className="filter-selection" 
+                    defaultValue="select-skill" 
+                    onChange={(event) => setFilterValue(event.target.value)} 
+            >
+                <option value={""}> All </option>
+                {filters}
+            </select>
+        </section>
+        </>
+    );
+}
 
 export default Filter;
 
