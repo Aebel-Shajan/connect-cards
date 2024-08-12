@@ -15,13 +15,14 @@ const PersonalPage = ({ users }) => {
     return <NotFoundPage />
   }
 
+  const userName = user.name[0].toUpperCase() + user.name.substring(1);
   const links = user?.links;
   console.log(user)
   return (
     <div className="container">
       <header>
         <img className="profile-pic" src={profileIcon} />
-        <h1 id="title">{userId}&apos;s Personal Page</h1>
+        <h1 id="title">{userName}&apos;s Personal Page</h1>
       </header>
       <section>
         <UserLinks links={links} />
