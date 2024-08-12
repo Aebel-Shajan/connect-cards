@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import PersonalPage from "./components/PersonalPage/PersonalPage";
 import Home from "./components/Home/Home";
+import AboutUs from "./components/AboutUsPage/AboutUs";
 import { useEffect, useState } from "react";
 import usersData from "./assets/data/users.json";
 
@@ -55,6 +56,10 @@ function App() {
             <LoadingComponent />
           ),
         },
+        {
+          path: "/about-us",
+          element: <AboutUs />
+        }
       ],
     },
   ]);
