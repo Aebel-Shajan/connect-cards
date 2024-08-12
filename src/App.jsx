@@ -1,8 +1,25 @@
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import {
+  Navigate,
+  Outlet,
+  RouterProvider,
+  createBrowserRouter,
+  useLocation,
+} from "react-router-dom";
 import PersonalPage from "./components/PersonalPage/PersonalPage";
 import Home from "./components/Home/Home";
 import { useEffect, useState } from "react";
 import usersData from "./assets/data/users.json";
+
+function CaseInsensitiveWrapper() {
+  const location = useLocation();
+
+  // If the current path is not all lowercase, redirect to the lowercase version
+  if (location.pathname !== location.pathname.toLowerCase()) {
+    return <Navigate to={location.pathname.toLowerCase()} replace />;
+  }
+
+  return <Outlet />;
+}
 
 function App() {
   const [users, setUsers] = useState([]);
@@ -23,6 +40,7 @@ function App() {
 
   const appRoutes = createBrowserRouter([
     {
+      element: <CaseInsensitiveWrapper />,
       path: "/",
       children: [
         {
