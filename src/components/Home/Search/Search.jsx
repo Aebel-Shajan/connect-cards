@@ -1,3 +1,5 @@
+import "./Search.css";
+
 const Search = ({ setSearchValue }) => {
   const handleInput = (event) => {
     setSearchValue(event.target.value);
@@ -9,8 +11,9 @@ const Search = ({ setSearchValue }) => {
   };
 
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
+    <div className="search-container">
+      <form className="search-form"
+            onSubmit={handleSubmit}>
         <input
           className="search"
           type="text"

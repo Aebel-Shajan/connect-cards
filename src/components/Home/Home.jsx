@@ -37,6 +37,7 @@ const Home = ({ users }) => {
     "Normal",
   ];
 
+
   let filteredUserCards = users;
   filteredUserCards = filteredUserCards.filter((user) => {
     if (searchValue) {
@@ -71,15 +72,10 @@ const Home = ({ users }) => {
     <div className="home-container">
       <h1>Home</h1>
       <Search setSearchValue={setSearchValue} />
-      <Filter
-        filterOptions={skillsOptions}
-        setFilterValue={setSkillsFilterValue}
-      />
-      <Filter
-        filterOptions={typeOptions}
-        setFilterValue={setTypesFilterValue}
-      />
-
+      <div className="filter-container">
+        <Filter filterOptions={skillsOptions} setFilterValue={setSkillsFilterValue} />
+        <Filter filterOptions={typeOptions} setFilterValue={setTypesFilterValue} />
+      </div>
       <div className="user-card-container">{userCardComponents}</div>
     </div>
   );
