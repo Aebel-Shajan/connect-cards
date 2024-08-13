@@ -19,7 +19,7 @@ const PersonalPage = ({ users }) => {
 
   const handleButton = () => {
     window.history.back();
-  }
+  };
 
   const userName = user.name[0].toUpperCase() + user.name.substring(1);
   const links = user?.links;
@@ -27,10 +27,11 @@ const PersonalPage = ({ users }) => {
   return (
     <div className="container">
       <header>
-      <div className="button-container">
-        <button id="back-button" onClick={handleButton}>Back</button>
-      </div>
-        <img className="profile-pic" src={profileIcon} />
+        <div className="button-container">
+          <button id="back-button" onClick={handleButton}>
+            Back
+          </button>
+        </div>
         <h1 id="title">{userName}&apos;s Personal Page</h1>
       </header>
       <div className="user-info-container">
