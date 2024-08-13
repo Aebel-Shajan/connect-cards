@@ -2,18 +2,19 @@
   text-align: center;
   background-color: #5b8e7d;
   padding-bottom: 1rem;
-
   display: grid;
   grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto;
+  gap: 1rem;
+  width: 100vw;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 #title {
   color: beige;
   font-size: 4rem;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-}
-.profile-pic {
-  height: 13rem;
 }
 
 header {
@@ -39,7 +40,7 @@ article {
   margin: 1.2rem;
   border-radius: 2rem;
   background-color: #8cb369;
-
+  
   /* Button title styling */
   font-size: 2rem;
   color: #243831;
@@ -55,3 +56,40 @@ article {
 .buttons:hover {
   background-color: #b6cfa0;
 }
+
+/* For mobile viewing */
+
+@media screen and (max-width: 1140px) {
+  .container {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    width: 100%;
+  }
+
+  .container header {
+    grid-column: 1;
+    text-align: center;
+  }
+
+  .container section {
+    grid-column: 1;
+    padding: 1rem 2rem;
+  }
+
+  .container article {
+    grid-column: 1;
+    justify-self: center;
+  }
+
+  .container #title {
+    font-size: 2.5rem;
+  }
+
+  .buttons {
+    height: auto;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+  }
+}
+

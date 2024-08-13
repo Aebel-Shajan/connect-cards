@@ -23,7 +23,6 @@ const PersonalPage = ({ users }) => {
   return (
     <div className="container">
       <header>
-        <img className="profile-pic" src={profileIcon} />
         <h1 id="title">{userName}&apos;s Personal Page</h1>
       </header>
       <section>

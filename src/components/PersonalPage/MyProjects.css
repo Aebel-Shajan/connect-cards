@@ -36,3 +36,30 @@ h1 {
   color: beige;
   font-size: 3rem;
 }
+
+/* For mobile viewing */
+@media screen and (max-width: 1024px) {
+  .project-container{
+    grid-template-columns: 1fr;
+    padding: 2rem;
+    grid-column: 1;
+  }
+
+  .repo-icon {
+    height: 4rem; 
+    width: 5rem;
+  }
+
+  .project {
+    padding: 0.5rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  #repo-title {
+    font-size: medium; 
+  }
+}
+
