@@ -1,5 +1,5 @@
 import "./AboutUs.css"
-import jsonpic from "../../assets/json-format.png";
+import jsonpic from "../../assets/exampleJSON.png";
 
 
 const AboutUs = () => {
