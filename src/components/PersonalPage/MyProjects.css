@@ -35,6 +35,8 @@
 h1 {
   color: beige;
   font-size: 3rem;
+  text-align: start;
+  grid-column: 1;
 }
 
 /* For mobile viewing */

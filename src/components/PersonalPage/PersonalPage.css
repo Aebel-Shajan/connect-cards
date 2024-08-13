@@ -1,9 +1,9 @@
 .container {
   text-align: center;
-  background-color: #5b8e7d;
+  background-color: #2b5876;
   padding-bottom: 1rem;
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr;
   grid-template-rows: auto;
   gap: 1rem;
   width: 100vw;
@@ -18,7 +18,6 @@
 }
 
 header {
-  background-image: url("../../assets/background.png");
   padding: 2rem;
   grid-column: 1 / 3;
 }
@@ -27,21 +26,21 @@ header {
   width: 100%;
   height: fit-content;
   padding: 1rem;
-
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  padding: 2rem 7rem;
 }
 
 #back-button {
-  color: #1c412e;
+  color: white;
   font-weight: bold;
   font-size: medium;
-  background-color:#5b8e7d;
+  background-color: #00025f;
   height: 2.3rem;
   width: 10%;
   border-radius: 0.6rem;
   border-color: beige;
-  border-style:inherit;
+  border-style: inherit;
 }
 
 #back-button:hover {
@@ -80,7 +79,12 @@ header {
     font-size: 2.5rem;
   }
 
-  .buttons {
+  .user-info-container {
+    flex-direction: column;
+    padding: 1rem;
+    align-items: center;
+  }
+  .link-container {
     height: auto;
     margin: 0.5rem;
     padding: 0.5rem 1rem;
