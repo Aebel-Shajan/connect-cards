@@ -39,14 +39,14 @@ h1 {
 
 /* For mobile viewing */
 @media screen and (max-width: 1024px) {
-  .project-container{
+  .project-container {
     grid-template-columns: 1fr;
     padding: 2rem;
     grid-column: 1;
   }
 
   .repo-icon {
-    height: 4rem; 
+    height: 4rem;
     width: 5rem;
   }
 
@@ -59,7 +59,6 @@ h1 {
   }
 
   #repo-title {
-    font-size: medium; 
+    font-size: medium;
   }
 }
-
