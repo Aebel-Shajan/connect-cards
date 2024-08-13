@@ -37,6 +37,7 @@ h1 {
   font-size: 3rem;
   text-align: start;
   grid-column: 1;
+  text-align: center;
 }
 
 /* For mobile viewing */

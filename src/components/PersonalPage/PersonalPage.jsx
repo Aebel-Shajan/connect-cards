@@ -5,6 +5,7 @@ import {} from "module";
 import profileIcon from "../../assets/profile-icon.png";
 import UserLinks from "./Links/UserLinks";
 import MyProjects from "./MyProjects";
+import getTypeStyle from "../../utils/TypeMapping";
 
 import UserCard from "../Home/UserCard/UserCard";
 import NotFoundPage from "../NotFoundPage/NotFoundPage";
@@ -17,6 +18,8 @@ const PersonalPage = ({ users }) => {
     return <NotFoundPage />;
   }
 
+  const { color } = getTypeStyle(user.type);
+
   const handleButton = () => {
     window.history.back();
   };
@@ -25,7 +28,7 @@ const PersonalPage = ({ users }) => {
   const links = user?.links;
   console.log(user);
   return (
-    <div className="container">
+    <div className="container" style={{background: color}}>
       <header>
         <div className="button-container">
           <button id="back-button" onClick={handleButton}>
