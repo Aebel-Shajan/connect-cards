@@ -29,7 +29,7 @@ const Home = ({ users }) => {
     <div className="home-container">
       <div className="background"></div>
       <div className="nav-container">
-        <h1>Farewell BNTA </h1>
+        <h1>Bye Bye BNTA </h1>
         {/* <Search setSearchValue={setSearchValue} /> */}
       </div>
       <div className="user-card-container">
