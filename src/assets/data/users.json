@@ -7,22 +7,22 @@
     "description": "",
     "moves": [
       {
-        "name": "",
+        "name": "Merge Conflict",
         "link": "",
-        "type": []
+        "type": ["Devops"]
       },
       {
-        "name": "",
+        "name": "CSS Cascade",
         "link": "",
-        "type": []
+        "type": ["Frontend"]
       },
       {
-        "name": "",
+        "name": "Zsh Zap",
         "link": "",
-        "type": []
+        "type": ["Cybersecurity"]
       }
     ],
-    "skills": ["React", "GitHub", "Ruby"]
+    "skills": ["React", "Zsh", "Ruby"]
   },
   {
     "name": "Colin",
@@ -32,19 +32,19 @@
     "description": "",
     "moves": [
       {
-        "name": "",
+        "name": "Agile Sprint",
         "link": "",
-        "type": []
+        "type": ["Normal"]
       },
       {
-        "name": "",
+        "name": "Server Spike",
         "link": "",
-        "type": []
+        "type": ["Backend"]
       },
       {
-        "name": "",
+        "name": "JarringScript",
         "link": "",
-        "type": []
+        "type": ["Frontend"]
       }
     ],
     "skills": ["React", "Raspberry Pi", "Spring"]
@@ -57,19 +57,19 @@
     "description": "",
     "moves": [
       {
-        "name": "",
+        "name": "Continuous Deployment",
         "link": "",
-        "type": []
+        "type": ["Devops"]
       },
       {
-        "name": "",
+        "name": "Hotfix Hammer",
         "link": "",
-        "type": []
+        "type": ["Normal"]
       },
       {
-        "name": "",
+        "name": "Crowd Strike",
         "link": "",
-        "type": []
+        "type": ["Devops"]
       }
     ],
     "skills": ["Node.js", "AWS", "Spring"]
@@ -82,19 +82,19 @@
     "description": "",
     "moves": [
       {
-        "name": "",
+        "name": "Pair Programming Pain",
         "link": "",
-        "type": []
+        "type": ["Normal"]
       },
       {
-        "name": "",
+        "name": "Prop Punch",
         "link": "",
-        "type": []
+        "type": ["Frontend"]
       },
       {
-        "name": "",
+        "name": "Git Fork Fury",
         "link": "",
-        "type": []
+        "type": ["Devops"]
       }
     ],
     "skills": ["React", "Python", "Slack"]
@@ -107,19 +107,19 @@
     "description": "",
     "moves": [
       {
-        "name": "",
+        "name": "Bounty Blast",
         "link": "",
-        "type": []
+        "type": ["Normal"]
       },
       {
-        "name": "",
+        "name": "Restful Rebound",
         "link": "",
-        "type": []
+        "type": ["Backend"]
       },
       {
-        "name": "",
+        "name": "SQL Injection ",
         "link": "",
-        "type": []
+        "type": ["Data"]
       }
     ],
     "skills": ["React", "DjangoREST", "Postgres"]
@@ -132,19 +132,19 @@
     "description": "",
     "moves": [
       {
-        "name": "",
+        "name": "Cameras On Pls",
         "link": "",
-        "type": []
+        "type": ["Frontend"]
       },
       {
-        "name": "",
+        "name": "Job Offer Jab",
         "link": "",
-        "type": []
+        "type": ["Normal"]
       },
       {
-        "name": "",
+        "name": "Mute Mayhem",
         "link": "",
-        "type": []
+        "type": ["Normal"]
       }
     ],
     "skills": ["Slack", "Zoom", "LinkedIn"]
@@ -157,19 +157,19 @@
     "description": "",
     "moves": [
       {
-        "name": "",
+        "name": "Standup Smash",
         "link": "",
-        "type": []
+        "type": ["Devops"]
       },
       {
-        "name": "",
+        "name": "Screen Share Slam",
         "link": "",
-        "type": []
+        "type": ["Normal"]
       },
       {
-        "name": "",
+        "name": "ChatGPT Choir",
         "link": "",
-        "type": []
+        "type": ["ai"]
       }
     ],
     "skills": ["Slack", "Zoom", "LinkedIn"]
