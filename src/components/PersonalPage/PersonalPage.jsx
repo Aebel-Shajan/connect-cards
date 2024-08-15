@@ -18,7 +18,7 @@ const PersonalPage = ({ users }) => {
     return <NotFoundPage />;
   }
 
-  const { color } = getTypeStyle(user.type);
+  const color  = getTypeStyle(user.type);
 
   const handleButton = () => {
     window.history.back();
@@ -28,7 +28,9 @@ const PersonalPage = ({ users }) => {
   const links = user?.links;
   console.log(user);
   return (
-    <div className="container" style={{background: color}}>
+    <div className="container" style={{
+      "--type-color-transparent": color["color"] + "88",
+    }}>
       <header>
         <div className="button-container">
           <button id="back-button" onClick={handleButton}>
