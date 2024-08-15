@@ -8,6 +8,7 @@ import MyProjects from "./MyProjects";
 
 import UserCard from "../Home/UserCard/UserCard";
 import NotFoundPage from "../NotFoundPage/NotFoundPage";
+import Navigation from "../Navigation";
 
 const PersonalPage = ({ users }) => {
   let { userId } = useParams();
@@ -27,6 +28,7 @@ const PersonalPage = ({ users }) => {
   return (
     <div className="container">
       <header>
+        <Navigation />
       <div className="button-container">
         <button id="back-button" onClick={handleButton}>Back</button>
       </div>

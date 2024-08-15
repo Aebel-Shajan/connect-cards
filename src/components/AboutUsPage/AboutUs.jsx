@@ -1,5 +1,6 @@
 import "./AboutUs.css"
 import jsonpic from "../../assets/json-format.png";
+import Navigation from "../Navigation";
 
 
 const AboutUs = () => {
@@ -14,7 +15,7 @@ const AboutUs = () => {
         <div className="button-container">
                 <button id="back-button" onClick={handleButton}>Back</button>
             </div>
-            
+            <Navigation />
             <h1>About Us!</h1>
 
             <div className="app-desc-container">

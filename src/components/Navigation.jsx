@@ -1,13 +1,21 @@
-import { useNavigate, Outlet } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 
 const Navigation = () => {
-  const navigate = useNavigate();
-
+  
   return (
     <>
-      <section className="navbar">
-        <button onClick={() => navigate("/")}>Home</button>
-      </section>
+      <header>
+      <nav>
+        <ul id="navbar">
+          <li>
+            <Link id="homeButton" to="/">Home</Link>
+          </li>
+          <li>
+            <Link id="aboutUsButton" to="/about-us">About Us</Link>
+          </li>
+        </ul>
+      </nav>
+      </header>
       <Outlet />
     </>
   );
