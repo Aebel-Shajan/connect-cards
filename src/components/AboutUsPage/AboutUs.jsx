@@ -1,22 +1,18 @@
 import "./AboutUs.css"
 import jsonpic from "../../assets/exampleJSON.png";
+import Navigation from "../Navigation";
 
 
 const AboutUs = () => {
     
-    const handleButton = () => {
-        window.history.back();
-      }
     
     return ( 
         <>
         <div className="about-us-container">
-        <div className="button-container">
-                <button id="back-button" onClick={handleButton}>Back</button>
-            </div>
-            
             <h1>About Us!</h1>
-
+            <div className="navigationbar">
+                <Navigation />
+            </div>
             <div className="app-desc-container">
                 <h3 className="title1">What is Connect Cards?</h3>
                 <p className="paragraph1">This app is designed to help you connect with a diverse and unique network of individuals. Whether you're looking to make new friends, find collaborators for projects, or expand your professional connections, this platform provides the perfect space to meet like-minded people. By joining our community, you can share your skills, showcase your work, and discover opportunities to collaborate with others who share your passions.</p>

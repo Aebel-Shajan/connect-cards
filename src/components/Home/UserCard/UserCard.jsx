@@ -1,59 +1,8 @@
 import PropTypes from "prop-types";
 import "./UserCard.css";
 import UserSkills from "./UserSkills/UserSkills";
-import {
-  FaBrain,
-  FaCloud,
-  FaDatabase,
-  FaInfinity,
-  FaReact,
-  FaRegDotCircle,
-  FaShieldAlt,
-} from "react-icons/fa";
-import { FaGear } from "react-icons/fa6";
 import TypeIcon from "./TypeIcon/TypeIcon";
-
-const typeReference = {
-  data: {
-    icon: <FaDatabase />,
-    color: "#ffff80", // light yellow
-  },
-  backend: {
-    icon: <FaGear />,
-    color: "#FF8C00", // dark orange
-  },
-  frontend: {
-    icon: <FaReact />,
-    color: "#61DAFB", // react blue
-  },
-  devops: {
-    icon: <FaInfinity />,
-    color: "#FF4500", // orange-red
-  },
-  cybersecurity: {
-    icon: <FaShieldAlt />,
-    color: "#32CD32", // lime green
-  },
-  cloud: {
-    icon: <FaCloud />,
-    color: "#1E90FF", // dodger blue
-  },
-  ai: {
-    icon: <FaBrain />,
-    color: "#FF1493", // deep pink
-  },
-  normal: {
-    icon: <FaRegDotCircle />,
-    color: "#d3d3d3", // light grey
-  },
-};
-
-function getTypeStyle(typeName) {
-  if (Object.keys(typeReference).includes(typeName.toLowerCase())) {
-    return typeReference[typeName.toLowerCase()];
-  }
-  return typeReference["normal"];
-}
+import getTypeStyle from "../../../utils/TypeMapping";
 
 const TypesComponent = ({ types }) => {
   return (
