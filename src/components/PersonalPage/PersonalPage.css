@@ -1,6 +1,5 @@
 .container {
   text-align: center;
-  background-color: #2b5876;
   padding-bottom: 1rem;
   display: grid;
   grid-template-columns: 1fr;
@@ -9,17 +8,20 @@
   width: 100vw;
   max-width: 100%;
   box-sizing: border-box;
-}
-
-#title {
-  color: beige;
-  font-size: 4rem;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  --type-color-transparent: rgba(255, 255, 255, 0.489);
+  background: linear-gradient(
+      var(--type-color-transparent),
+      var(--type-color-transparent)
+    ),
+    url(https://static.vecteezy.com/system/resources/thumbnails/004/837/100/small/grey-watercolor-paper-or-concrete-grunge-background-vector.jpg);
+    background-blend-mode: color;
+    background-size: cover;
 }
 
 header {
   padding: 2rem;
   grid-column: 1 / 3;
+  /* background-color: #00025F; */
 }
 
 .user-info-container {
@@ -31,7 +33,7 @@ header {
 }
 
 #back-button {
-  color: white;
+  color: beige;
   font-weight: bold;
   font-size: medium;
   background-color: #00025f;
@@ -39,11 +41,7 @@ header {
   width: 10%;
   border-radius: 0.6rem;
   border-color: beige;
-  border-style: inherit;
-}
-
-#back-button:hover {
-  background-color: #bfebdd;
+  border-style: groove;
 }
 
 #back-button:active {
@@ -73,11 +71,6 @@ header {
   .container article {
     grid-column: 1;
     justify-self: center;
-  }
-
-  .container #title {
-    font-size: 2.5rem;
-    padding-top: 0.5rem;
   }
 
   .user-info-container {

@@ -70,7 +70,7 @@ const Home = ({ users }) => {
 
   return (
     <div className="home-container">
-      <h1>Home</h1>
+      <h1 id="home-title">Home</h1>
       <Search setSearchValue={setSearchValue} />
       <div className="filter-container">
         <Filter filterOptions={skillsOptions} setFilterValue={setSkillsFilterValue} />

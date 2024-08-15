@@ -11,10 +11,11 @@
   flex-wrap: wrap;
 }
 
-h1 {
+#home-title {
   background-color: #2b5876;
   text-align: center;
   font-size: 60px;
+  color: beige;
 }
 
 .filter-container {

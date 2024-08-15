@@ -39,7 +39,7 @@ const MyProjects = ({ links }) => {
 
   return (
     <>
-      <h1>My Projects:</h1>
+      <h1 id="title">My Projects:</h1>
       <div className="project-container">{mappedProjects}</div>
     </>
   );

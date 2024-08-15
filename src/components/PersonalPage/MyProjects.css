@@ -32,11 +32,12 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-h1 {
-  color: beige;
+#title {
+  color: #00025f;
   font-size: 3rem;
   text-align: start;
   grid-column: 1;
+  text-align: center;
 }
 
 /* For mobile viewing */
