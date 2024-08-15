@@ -3,8 +3,8 @@
     "name": "Anna",
     "type": "Frontend",
     "image": "/anna.png",
-    "occupation": "Former Trainer",
-    "description": "Makes impossible ideas easy to understand. Scottish??? ",
+    "occupation": "Software Engineering Trainer",
+    "description": "Makes impossible ideas easy to understand. Very caring person. ",
     "moves": [
       {
         "name": "Merge Conflict",
@@ -28,8 +28,8 @@
     "name": "Colin",
     "type": "Frontend",
     "image": "/colin.png",
-    "occupation": "Former Trainer",
-    "description": "Known as 'The CodeFather' by generations old. Scottish??",
+    "occupation": "Software Engineering Trainer",
+    "description": "Known as 'The CodeFather' by generations old. From Scotland, sounds scottish. Very knowledgable.",
     "moves": [
       {
         "name": "Agile Sprint",
@@ -53,8 +53,8 @@
     "name": "Richard",
     "type": "Devops",
     "image": "/richard.png",
-    "occupation": "Former Trainer",
-    "description": "A Creator and maintainer of Bright code. Irish??",
+    "occupation": "Software Engineering Trainer",
+    "description": "A Creator and maintainer of the amazing Bright code. Possibly Irish",
     "moves": [
       {
         "name": "Continuous Deployment",
@@ -78,8 +78,8 @@
     "name": "Thibyaa",
     "type": "Frontend",
     "image": "/thibyaa.png",
-    "occupation": "Software Engineer",
-    "description": "Marker of code. Big Deku fan? .",
+    "occupation": "Software Engineering Trainer",
+    "description": "Marker of code, keeper of knowledge. Possibly an MHA fan.",
     "moves": [
       {
         "name": "Pair Programming Pain",
@@ -103,8 +103,8 @@
     "name": "Zsolts",
     "type": "Backend",
     "image": "/zsolts.png",
-    "occupation": "Former Trainer",
-    "description": "Definitely in the top 10 to come out of Hungary. Consumer of Coffee.",
+    "occupation": "Software Engineering Trainer",
+    "description": " 6'4'' bald eastern european entity. Consumer of Coffee. Is currently in space?? 😱",
     "moves": [
       {
         "name": "Bounty Blast",
@@ -123,55 +123,5 @@
       }
     ],
     "skills": ["React", "DjangoREST", "Postgres"]
-  },
-  {
-    "name": "Phil",
-    "type": "Normal",
-    "image": "/phil.png",
-    "occupation": "Human",
-    "description": "",
-    "moves": [
-      {
-        "name": "Cameras On Pls",
-        "link": "",
-        "type": ["Frontend"]
-      },
-      {
-        "name": "Job Offer Jab",
-        "link": "",
-        "type": ["Normal"]
-      },
-      {
-        "name": "Mute Mayhem",
-        "link": "",
-        "type": ["Normal"]
-      }
-    ],
-    "skills": ["Slack", "Zoom", "LinkedIn"]
-  },
-  {
-    "name": "Lewis",
-    "type": "Normal",
-    "image": "/lewis.png",
-    "occupation": "Human",
-    "description": "",
-    "moves": [
-      {
-        "name": "Standup Smash",
-        "link": "",
-        "type": ["Devops"]
-      },
-      {
-        "name": "Screen Share Slam",
-        "link": "",
-        "type": ["Normal"]
-      },
-      {
-        "name": "ChatGPT Choir",
-        "link": "",
-        "type": ["ai"]
-      }
-    ],
-    "skills": ["Slack", "Zoom", "LinkedIn"]
   }
 ]
