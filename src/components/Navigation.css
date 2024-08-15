@@ -1,0 +1,31 @@
+header.nav-header {
+    background-color: #4CAF50;  /* Green background */
+}
+
+#navbar {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    list-style-type: none;
+    margin-top: 85px;
+    
+}
+
+.navButton {
+    text-decoration: none;
+    padding: .1em .3em .1em .3em;
+    border-radius: 8px;
+    background-color: white;
+    color: #2D304E;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.navButton:hover {
+    background-color: rgb(203, 198, 198);
+    transform: scale(1.05);
+    font-weight: 800;
+}
+

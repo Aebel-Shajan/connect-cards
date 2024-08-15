@@ -1,17 +1,18 @@
 import { Link, Outlet } from "react-router-dom";
+import "./Navigation.css"
 
 const Navigation = () => {
   
   return (
     <>
-      <header>
+    <header>
       <nav>
         <ul id="navbar">
           <li>
-            <Link id="homeButton" to="/">Home</Link>
+            <Link className="navButton" to="/">Home</Link>
           </li>
           <li>
-            <Link id="aboutUsButton" to="/about-us">About Us</Link>
+            <Link className="navButton" to="/about-us">About</Link>
           </li>
         </ul>
       </nav>

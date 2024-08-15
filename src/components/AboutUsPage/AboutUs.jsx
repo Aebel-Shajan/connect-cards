@@ -5,17 +5,13 @@ import Navigation from "../Navigation";
 
 const AboutUs = () => {
     
-    const handleButton = () => {
-        window.history.back();
-      }
     
     return ( 
         <>
         <div className="about-us-container">
-        <div className="button-container">
-                <button id="back-button" onClick={handleButton}>Back</button>
+            <div className="navigationbar">
+                <Navigation />
             </div>
-            <Navigation />
             <h1>About Us!</h1>
 
             <div className="app-desc-container">
