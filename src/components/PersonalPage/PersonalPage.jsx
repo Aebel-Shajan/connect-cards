@@ -1,14 +1,16 @@
 import PropTypes from "prop-types";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate, Link } from "react-router-dom";
 import "./PersonalPage.css";
 import {} from "module";
-import profileIcon from "../../assets/profile-icon.png";
 import UserLinks from "./Links/UserLinks";
 import MyProjects from "./MyProjects";
+import getTypeStyle from "../../utils/TypeMapping";
 
 import UserCard from "../Home/UserCard/UserCard";
 import NotFoundPage from "../NotFoundPage/NotFoundPage";
 import Navigation from "../Navigation";
+import { FaHome } from "react-icons/fa";
+
 
 const PersonalPage = ({ users }) => {
   let { userId } = useParams();
@@ -18,24 +20,23 @@ const PersonalPage = ({ users }) => {
     return <NotFoundPage />;
   }
 
+
   const userName = user.name[0].toUpperCase() + user.name.substring(1);
+  const color  = getTypeStyle(user.type);
   const links = user?.links;
-  console.log(user);
+
   return (
-    <div className="container">
-      <header>
-        <img className="profile-pic" src={profileIcon} />
-        <h1 id="title">{userName}&apos;s Personal Page</h1>
-        <div className="nav-container">
+    <div 
+      className="personal-page-container" 
+      style={{"--type-color-transparent": color["color"] + "88"}}>
+      <div className="nav-container">
         <Navigation />
       </div>
-      </header>
-      <section>
-        <UserLinks links={links} />
-      </section>
-      <article>
+      </div>
+      <div className="user-info-container">
         <UserCard user={user} />
-      </article>
+        <UserLinks links={links} />
+      </div>
       <MyProjects links={links} />
     </div>
   );

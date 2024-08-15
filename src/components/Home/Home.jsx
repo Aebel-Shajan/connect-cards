@@ -71,7 +71,7 @@ const Home = ({ users }) => {
 
   return (
     <div className="home-container">
-      <h1>Home</h1>
+      <h1 id="home-title">Home</h1>
       <div className="navigationbar">
         <Navigation />
       </div>
