@@ -23,10 +23,9 @@ const PersonalPage = ({ users }) => {
   const handleButton = () => {
     window.history.back();
   };
-
-  const userName = user.name[0].toUpperCase() + user.name.substring(1);
+  
   const links = user?.links;
-  console.log(user);
+
   return (
     <div className="container" style={{
       "--type-color-transparent": color["color"] + "88",
