@@ -24,9 +24,11 @@ const PersonalPage = ({ users }) => {
   return (
     <div className="container">
       <header>
-      <Navigation />
         <img className="profile-pic" src={profileIcon} />
         <h1 id="title">{userName}&apos;s Personal Page</h1>
+        <div className="nav-container">
+        <Navigation />
+      </div>
       </header>
       <section>
         <UserLinks links={links} />

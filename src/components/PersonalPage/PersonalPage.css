@@ -80,3 +80,7 @@ article {
   display: flex;
   flex-direction: row;
 }
+
+.nav-container {
+  background-color: transparent;
+}
