@@ -57,6 +57,10 @@
    margin-bottom: 1em;
 }
 
+.json-img {
+    width: 65%;
+}
+
 .paragraph4 {
     width: 80%; /* Width is 80% of the parent container */
     max-width: 800px;
