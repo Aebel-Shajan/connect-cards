@@ -37,11 +37,15 @@ const MyProjects = ({ links }) => {
     getProjectRepos();
   }, []);
 
+  if (mappedProjects.length === 0) {
+    return <></>
+  }
+
   return (
-    <>
+    <div className="projects-section-container">
       <h1 id="title">My Projects:</h1>
       <div className="project-container">{mappedProjects}</div>
-    </>
+    </div>
   );
 };
 

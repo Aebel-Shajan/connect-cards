@@ -1,14 +1,14 @@
 import PropTypes from "prop-types";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate, Link } from "react-router-dom";
 import "./PersonalPage.css";
 import {} from "module";
-import profileIcon from "../../assets/profile-icon.png";
 import UserLinks from "./Links/UserLinks";
 import MyProjects from "./MyProjects";
 import getTypeStyle from "../../utils/TypeMapping";
 
 import UserCard from "../Home/UserCard/UserCard";
 import NotFoundPage from "../NotFoundPage/NotFoundPage";
+import { FaHome } from "react-icons/fa";
 
 const PersonalPage = ({ users }) => {
   let { userId } = useParams();
@@ -19,24 +19,17 @@ const PersonalPage = ({ users }) => {
   }
 
   const color  = getTypeStyle(user.type);
-
-  const handleButton = () => {
-    window.history.back();
-  };
-  
   const links = user?.links;
 
   return (
-    <div className="container" style={{
-      "--type-color-transparent": color["color"] + "88",
-    }}>
-      <header>
-        <div className="button-container">
-          <button id="back-button" onClick={handleButton}>
-            Back
-          </button>
-        </div>
-      </header>
+    <div 
+      className="personal-page-container" 
+      style={{"--type-color-transparent": color["color"] + "88"}}>
+      <div className="button-container">
+          <Link id="home-button" to="/">
+            See other cards
+          </Link>
+      </div>
       <div className="user-info-container">
         <UserCard user={user} />
         <UserLinks links={links} />
