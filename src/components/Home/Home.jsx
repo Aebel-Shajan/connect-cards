@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import "./Home.css";
 import Filter from "./Filter/Filter";
+import Navigation from "../Navigation";
 
 const Home = ({ users }) => {
   const [searchValue, setSearchValue] = useState("");
@@ -71,12 +72,18 @@ const Home = ({ users }) => {
   return (
     <div className="home-container">
       <h1 id="home-title">Home</h1>
-      <Search setSearchValue={setSearchValue} />
+      <div className="navigationbar">
+        <Navigation />
+      </div>
+        <Search setSearchValue={setSearchValue} />
       <div className="filter-container">
         <Filter filterOptions={skillsOptions} setFilterValue={setSkillsFilterValue} />
         <Filter filterOptions={typeOptions} setFilterValue={setTypesFilterValue} />
       </div>
       <div className="user-card-container">{userCardComponents}</div>
+      <footer className="home-footer">
+        <p className="footer-aboutus"><a href="/about-us">About Us</a></p>
+      </footer>
     </div>
   );
 };

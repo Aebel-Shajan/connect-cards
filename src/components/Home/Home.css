@@ -24,4 +24,12 @@
   justify-content: center;
 }
 
+.home-footer {
+  background-color: aquamarine;
+  height: 3em;
+  text-align: center;
+}
 
+.home-footer > p a {
+  font-size: 25px; 
+}

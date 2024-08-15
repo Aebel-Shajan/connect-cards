@@ -8,7 +8,9 @@ import getTypeStyle from "../../utils/TypeMapping";
 
 import UserCard from "../Home/UserCard/UserCard";
 import NotFoundPage from "../NotFoundPage/NotFoundPage";
+import Navigation from "../Navigation";
 import { FaHome } from "react-icons/fa";
+
 
 const PersonalPage = ({ users }) => {
   let { userId } = useParams();
@@ -18,6 +20,8 @@ const PersonalPage = ({ users }) => {
     return <NotFoundPage />;
   }
 
+
+  const userName = user.name[0].toUpperCase() + user.name.substring(1);
   const color  = getTypeStyle(user.type);
   const links = user?.links;
 
@@ -25,10 +29,8 @@ const PersonalPage = ({ users }) => {
     <div 
       className="personal-page-container" 
       style={{"--type-color-transparent": color["color"] + "88"}}>
-      <div className="button-container">
-          <Link id="home-button" to="/">
-            See other cards
-          </Link>
+      <div className="nav-container">
+        <Navigation />
       </div>
       <div className="user-info-container">
         <UserCard user={user} />
