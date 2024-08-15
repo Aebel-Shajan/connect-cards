@@ -37,6 +37,10 @@ const MyProjects = ({ links }) => {
     getProjectRepos();
   }, []);
 
+  if (mappedProjects.length === 0) {
+    return <></>
+  }
+
   return (
     <>
       <h1 id="title">My Projects:</h1>
