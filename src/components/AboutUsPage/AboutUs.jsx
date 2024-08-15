@@ -9,7 +9,7 @@ const AboutUs = () => {
     return ( 
         <>
         <div className="about-us-container">
-            <h1>About Us!</h1>
+            <h1 id="about-title">About Us!</h1>
             <div className="navigationbar">
                 <Navigation />
             </div>
