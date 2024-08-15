@@ -4,7 +4,7 @@
     "type": "Frontend",
     "image": "/anna.png",
     "occupation": "Former Trainer",
-    "description": "",
+    "description": "Makes impossible ideas easy to understand. Scottish??? ",
     "moves": [
       {
         "name": "Merge Conflict",
@@ -29,7 +29,7 @@
     "type": "Frontend",
     "image": "/colin.png",
     "occupation": "Former Trainer",
-    "description": "",
+    "description": "Known as 'The CodeFather' by generations old. Scottish??",
     "moves": [
       {
         "name": "Agile Sprint",
@@ -54,7 +54,7 @@
     "type": "Devops",
     "image": "/richard.png",
     "occupation": "Former Trainer",
-    "description": "",
+    "description": "A Creator and maintainer of Bright code. Irish??",
     "moves": [
       {
         "name": "Continuous Deployment",
@@ -79,7 +79,7 @@
     "type": "Frontend",
     "image": "/thibyaa.png",
     "occupation": "Software Engineer",
-    "description": "",
+    "description": "Marker of code. Big Deku fan? .",
     "moves": [
       {
         "name": "Pair Programming Pain",
@@ -104,7 +104,7 @@
     "type": "Backend",
     "image": "/zsolts.png",
     "occupation": "Former Trainer",
-    "description": "",
+    "description": "Definitely in the top 10 to come out of Hungary. Consumer of Coffee.",
     "moves": [
       {
         "name": "Bounty Blast",
