@@ -69,3 +69,10 @@
     color: beige;
     text-align: center;
 }
+
+#about-title {
+    background-color: #2b5876;
+    text-align: center;
+    font-size: 60px;
+    color: beige;
+  }

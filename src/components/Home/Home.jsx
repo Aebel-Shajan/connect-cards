@@ -81,9 +81,6 @@ const Home = ({ users }) => {
         <Filter filterOptions={typeOptions} setFilterValue={setTypesFilterValue} />
       </div>
       <div className="user-card-container">{userCardComponents}</div>
-      <footer className="home-footer">
-        <p className="footer-aboutus"><a href="/about-us">About Us</a></p>
-      </footer>
     </div>
   );
 };
