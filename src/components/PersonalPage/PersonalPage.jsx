@@ -37,7 +37,6 @@ const PersonalPage = ({ users }) => {
             Back
           </button>
         </div>
-        <h1 id="title">{userName}&apos;s Personal Page</h1>
       </header>
       <div className="user-info-container">
         <UserCard user={user} />
