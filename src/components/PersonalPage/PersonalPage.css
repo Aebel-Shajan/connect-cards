@@ -26,13 +26,13 @@
 }
 
 #home-button {
-  padding: 0 1rem;
+  padding: 0.8rem 1rem;
   
   color: beige;
   font-weight: bold;
-  font-size: medium;
+  font-size: x-large;
   background-color: #00025f;
-  height: 2.3rem;
+  height: fit-content;
   width: fit-content;
   border-radius: 1rem;
   text-decoration: none;
