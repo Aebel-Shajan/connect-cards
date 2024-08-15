@@ -42,10 +42,10 @@ const MyProjects = ({ links }) => {
   }
 
   return (
-    <>
+    <div className="projects-section-container">
       <h1 id="title">My Projects:</h1>
       <div className="project-container">{mappedProjects}</div>
-    </>
+    </div>
   );
 };
 
