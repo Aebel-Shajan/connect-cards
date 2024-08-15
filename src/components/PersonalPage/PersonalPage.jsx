@@ -32,7 +32,6 @@ const PersonalPage = ({ users }) => {
       <div className="nav-container">
         <Navigation />
       </div>
-      </div>
       <div className="user-info-container">
         <UserCard user={user} />
         <UserLinks links={links} />
