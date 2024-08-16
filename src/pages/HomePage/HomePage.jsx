@@ -1,10 +1,10 @@
 import Search from "./Search/Search";
-import UserCardFront from "../UserCard/UserCardFront/UserCardFront";
+import UserCardFront from "../../components/UserCard/UserCardFront/UserCardFront";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import "./Home.css";
 import Filter from "./Filter/Filter";
-import Navigation from "../Navigation/Navigation";
+import Navigation from "../../components/Navigation/Navigation";
 
 import PropTypes from "prop-types";
 
