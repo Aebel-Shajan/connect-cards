@@ -2,7 +2,7 @@ import Search from "./Search/Search";
 import UserCardFront from "../../components/UserCard/UserCardFront/UserCardFront";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
-import "./Home.css";
+import "./HomePage.css";
 import Filter from "./Filter/Filter";
 import Navigation from "../../components/Navigation/Navigation";
 

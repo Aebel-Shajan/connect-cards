@@ -3,10 +3,10 @@ import { useParams } from "react-router-dom";
 import "./PersonalPage.css";
 import ProjectSection from "./ProjectSection/ProjectSection";
 import {getTypeStyle} from "../../utils/mappers";
-import UserCardFront from "../UserCard/UserCardFront/UserCardFront";
-import UserCardBack from "../UserCard/UserCardBack/UserCardBack";
+import UserCardFront from "../../components/UserCard/UserCardFront/UserCardFront";
+import UserCardBack from "../../components/UserCard/UserCardBack/UserCardBack";
+import Navigation from "../../components/Navigation/Navigation";
 import NotFoundPage from "../NotFoundPage/NotFoundPage";
-import Navigation from "../Navigation/Navigation";
 
 const PersonalPage = ({ users }) => {
   let { userId } = useParams();
