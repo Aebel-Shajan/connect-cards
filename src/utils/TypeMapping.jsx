@@ -1,4 +1,12 @@
-import { FaBrain, FaCloud, FaDatabase, FaInfinity, FaReact, FaRegDotCircle, FaShieldAlt } from "react-icons/fa";
+import {
+  FaBrain,
+  FaCloud,
+  FaDatabase,
+  FaInfinity,
+  FaReact,
+  FaRegDotCircle,
+  FaShieldAlt,
+} from "react-icons/fa";
 import { FaGear } from "react-icons/fa6";
 
 const TypeMapping = {
@@ -37,7 +45,7 @@ const TypeMapping = {
 };
 
 function getTypeStyle(typeName) {
-  const typeStyle = TypeMapping[typeName.toLowerCase().replaceAll(" ", "")]
+  const typeStyle = TypeMapping[typeName.toLowerCase().replaceAll(" ", "")];
   if (typeStyle) {
     return typeStyle;
   }

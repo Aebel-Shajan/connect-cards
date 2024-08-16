@@ -11,7 +11,6 @@ import NotFoundPage from "../NotFoundPage/NotFoundPage";
 import Navigation from "../Navigation";
 import { FaHome } from "react-icons/fa";
 
-
 const PersonalPage = ({ users }) => {
   let { userId } = useParams();
   const user = users.find((user) => user.name.toLowerCase() === userId);
@@ -20,15 +19,15 @@ const PersonalPage = ({ users }) => {
     return <NotFoundPage />;
   }
 
-
   const userName = user.name[0].toUpperCase() + user.name.substring(1);
-  const color  = getTypeStyle(user.type);
+  const color = getTypeStyle(user.type);
   const links = user?.links;
 
   return (
-    <div 
-      className="personal-page-container" 
-      style={{"--type-color-transparent": color["color"] + "88"}}>
+    <div
+      className="personal-page-container"
+      style={{ "--type-color-transparent": color["color"] + "88" }}
+    >
       <div className="nav-container">
         <Navigation />
       </div>
@@ -42,7 +41,7 @@ const PersonalPage = ({ users }) => {
 };
 
 PersonalPage.propTypes = {
-  user: PropTypes.shape({
+  users: PropTypes.shape({
     name: PropTypes.string.isRequired,
     links: PropTypes.arrayOf(PropTypes.object).isRequired,
   }),

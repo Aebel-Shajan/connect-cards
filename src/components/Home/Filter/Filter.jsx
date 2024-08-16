@@ -10,20 +10,21 @@ const Filter = ({ filterOptions, setFilterValue }) => {
     );
   });
 
-    return (  
-        <>
-        <section className="skillsFilter-container">
-            <select className="filter-selection" 
-                    defaultValue="select-skill" 
-                    onChange={(event) => setFilterValue(event.target.value)} 
-            >
-                <option value={""}> All </option>
-                {filters}
-            </select>
-        </section>
-        </>
-    );
-}
+  return (
+    <>
+      <section className="skillsFilter-container">
+        <select
+          className="filter-selection"
+          defaultValue="select-skill"
+          onChange={(event) => setFilterValue(event.target.value)}
+        >
+          <option value={""}> All </option>
+          {filters}
+        </select>
+      </section>
+    </>
+  );
+};
 
 export default Filter;
 

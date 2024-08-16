@@ -12,8 +12,7 @@ const Search = ({ setSearchValue }) => {
 
   return (
     <div className="search-container">
-      <form className="search-form"
-            onSubmit={handleSubmit}>
+      <form className="search-form" onSubmit={handleSubmit}>
         <input
           className="search"
           type="text"

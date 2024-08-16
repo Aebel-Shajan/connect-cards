@@ -38,7 +38,7 @@ const MyProjects = ({ links }) => {
   }, []);
 
   if (mappedProjects.length === 0) {
-    return <></>
+    return <></>;
   }
 
   return (

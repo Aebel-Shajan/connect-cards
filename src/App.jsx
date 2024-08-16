@@ -58,8 +58,8 @@ function App() {
         },
         {
           path: "/about-us",
-          element: <AboutUs />
-        }
+          element: <AboutUs />,
+        },
       ],
     },
   ]);

@@ -23,11 +23,7 @@ const UserLinks = ({ links }) => {
     );
   }
 
-  return (
-    <div className="link-container">
-      {linkComponents}
-    </div>
-  )
+  return <div className="link-container">{linkComponents}</div>;
 };
 
 UserLinks.propTypes = {
