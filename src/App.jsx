@@ -5,11 +5,11 @@ import {
   createBrowserRouter,
   useLocation,
 } from "react-router-dom";
-import PersonalPage from "./components/PersonalPage/PersonalPage";
 import { useEffect, useState } from "react";
 import usersData from "./assets/data/users.json";
 import AboutUsPage from "./pages/AboutUsPage/AboutUsPage";
-import HomePage from "./pages/HomePage/HomePage"
+import HomePage from "./pages/HomePage/HomePage";
+import PersonalPage from "./pages/PersonalPage/PersonalPage";
 
 function CaseInsensitiveWrapper() {
   const location = useLocation();
