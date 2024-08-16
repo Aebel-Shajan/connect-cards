@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import { useParams } from "react-router-dom";
 import "./PersonalPage.css";
-import MyProjects from "./MyProjects";
+import ProjectSection from "./ProjectSection/ProjectSection";
 import {getTypeStyle} from "../../utils/mappers";
 import UserCardFront from "../UserCard/UserCardFront/UserCardFront";
 import UserCardBack from "../UserCard/UserCardBack/UserCardBack";
@@ -30,7 +30,7 @@ const PersonalPage = ({ users }) => {
         <UserCardFront user={user} />
         <UserCardBack user={user} />
       </div>
-      <MyProjects links={user.links} />
+      <ProjectSection links={user.links} />
     </div>
   );
 };

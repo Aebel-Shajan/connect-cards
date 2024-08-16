@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import PropTypes from "prop-types";
-import repoIcon from "../../assets/repo-icon.png";
-import "./MyProjects.css";
+import repoIcon from "../../../assets/repo-icon.png";
+import "./ProjectSection.css";
 
-const MyProjects = ({ links }) => {
+const ProjectSection = ({ links }) => {
   const [projectRepos, setProjectRepos] = useState([]);
 
   const githubLink = Object.values(links)[1];
@@ -49,8 +49,8 @@ const MyProjects = ({ links }) => {
   );
 };
 
-MyProjects.propTypes = {
+ProjectSection.propTypes = {
   links: PropTypes.object.isRequired,
 };
 
-export default MyProjects;
+export default ProjectSection;
