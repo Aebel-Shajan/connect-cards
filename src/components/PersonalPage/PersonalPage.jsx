@@ -5,7 +5,7 @@ import {} from "module";
 import UserLinks from "./Links/UserLinks";
 import MyProjects from "./MyProjects";
 import {getTypeStyle} from "../../utils/mappers";
-import UserCard from "../Home/UserCard/UserCard";
+import UserCard from "../UserCard/UserCard";
 import NotFoundPage from "../NotFoundPage/NotFoundPage";
 import Navigation from "../Navigation/Navigation";
 
