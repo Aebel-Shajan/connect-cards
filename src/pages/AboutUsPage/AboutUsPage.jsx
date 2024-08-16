@@ -1,8 +1,8 @@
-import "./AboutUs.css";
+import "./AboutUsPage.css";
 import jsonpic from "../../assets/exampleJSON.png";
 import Navigation from "../Navigation/Navigation";
 
-const AboutUs = () => {
+const AboutUsPage = () => {
   return (
     <>
       <div className="about-us-container">
@@ -54,4 +54,4 @@ const AboutUs = () => {
   );
 };
 
-export default AboutUs;
+export default AboutUsPage;

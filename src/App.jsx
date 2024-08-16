@@ -7,9 +7,9 @@ import {
 } from "react-router-dom";
 import PersonalPage from "./components/PersonalPage/PersonalPage";
 import Home from "./components/Home/Home";
-import AboutUs from "./components/AboutUsPage/AboutUs";
 import { useEffect, useState } from "react";
 import usersData from "./assets/data/users.json";
+import AboutUsPage from "./pages/AboutUsPage/AboutUsPage";
 
 function CaseInsensitiveWrapper() {
   const location = useLocation();
@@ -58,7 +58,7 @@ function App() {
         },
         {
           path: "/about-us",
-          element: <AboutUs />,
+          element: <AboutUsPage />,
         },
       ],
     },
