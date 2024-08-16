@@ -1,8 +1,8 @@
 import PropTypes from "prop-types";
-import "./UserCard.css";
+import "./UserCardFront.css";
 import UserSkills from "./UserSkills/UserSkills";
 import TypeIcon from "./TypeIcon/TypeIcon";
-import {getTypeStyle} from "../../utils/mappers";
+import {getTypeStyle} from "../../../utils/mappers";
 
 const TypesComponent = ({ types }) => {
   return (
@@ -36,7 +36,7 @@ MoveComponent.propTypes = {
   }),
 };
 
-const UserCard = ({ user, onClick }) => {
+const UserCardFront = ({ user, onClick }) => {
   const cardTypeStyle = getTypeStyle(user.type);
   return (
     <div
@@ -70,7 +70,7 @@ const UserCard = ({ user, onClick }) => {
   );
 };
 
-UserCard.propTypes = {
+UserCardFront.propTypes = {
   user: PropTypes.shape({
     name: PropTypes.string,
     image: PropTypes.string,
@@ -83,4 +83,4 @@ UserCard.propTypes = {
   onClick: PropTypes.func,
 };
 
-export default UserCard;
+export default UserCardFront;

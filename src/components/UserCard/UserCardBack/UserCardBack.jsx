@@ -1,21 +1,22 @@
 import PropTypes from "prop-types";
-import "./UserLinks.css";
+import "./UserCardBack.css";
 import {getIconComponent} from "../../../utils/mappers";
 
-const UserLinks = ({ links }) => {
+const UserCardBack = ({ user }) => {
   let linkComponents = [];
+  const linkNames = Object.keys(user.links)
 
   const handleClick = (url) => {
     window.open(url);
   };
 
-  for (let i = 0; i < 3; i++) {
-    const linkName = Object.keys(links)[i];
+  for (let i = 0; i < linkNames.length; i++) {
+    const linkName = linkNames[i];
     linkComponents[i] = (
       <button
         className="link"
         key={`link${i}`}
-        onClick={() => handleClick(links[linkName])}
+        onClick={() => handleClick(user.links[linkName])}
       >
         {getIconComponent(linkName)}
         {linkName}
@@ -26,8 +27,10 @@ const UserLinks = ({ links }) => {
   return <div className="link-container">{linkComponents}</div>;
 };
 
-UserLinks.propTypes = {
-  links: PropTypes.object,
+UserCardBack.propTypes = {
+  user: PropTypes.shape({
+    links: PropTypes.object.isRequired
+  }).isRequired,
 };
 
-export default UserLinks;
+export default UserCardBack;

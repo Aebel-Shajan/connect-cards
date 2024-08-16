@@ -1,11 +1,10 @@
 import PropTypes from "prop-types";
 import { useParams } from "react-router-dom";
 import "./PersonalPage.css";
-import {} from "module";
-import UserLinks from "./Links/UserLinks";
 import MyProjects from "./MyProjects";
 import {getTypeStyle} from "../../utils/mappers";
-import UserCard from "../UserCard/UserCard";
+import UserCardFront from "../UserCard/UserCardFront/UserCardFront";
+import UserCardBack from "../UserCard/UserCardBack/UserCardBack";
 import NotFoundPage from "../NotFoundPage/NotFoundPage";
 import Navigation from "../Navigation/Navigation";
 
@@ -18,7 +17,6 @@ const PersonalPage = ({ users }) => {
   }
 
   const color = getTypeStyle(user.type);
-  const links = user.links;
 
   return (
     <div
@@ -29,10 +27,10 @@ const PersonalPage = ({ users }) => {
         <Navigation />
       </div>
       <div className="user-info-container">
-        <UserCard user={user} />
-        <UserLinks links={links} />
+        <UserCardFront user={user} />
+        <UserCardBack user={user} />
       </div>
-      <MyProjects links={links} />
+      <MyProjects links={user.links} />
     </div>
   );
 };

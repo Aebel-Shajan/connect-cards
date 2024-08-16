@@ -1,5 +1,5 @@
 import Search from "./Search/Search";
-import UserCard from "../UserCard/UserCard";
+import UserCardFront from "../UserCard/UserCardFront/UserCardFront";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import "./Home.css";
@@ -62,7 +62,7 @@ const Home = ({ users }) => {
 
   const userCardComponents = filteredUserCards.map((user, i) => {
     return (
-      <UserCard
+      <UserCardFront
         user={user}
         key={`user${i}`}
         onClick={() => navigate(`/${user.name}`)}
