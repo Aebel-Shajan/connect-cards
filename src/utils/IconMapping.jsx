@@ -20,12 +20,4 @@ const IconMapping = {
   link: <FaLink />,
 };
 
-function getIconComponent(iconName) {
-  const IconComponent = IconMapping[iconName.toLowerCase().replaceAll(" ", "")];
-  if (IconComponent) {
-    return IconComponent;
-  }
-  return IconMapping["link"];
-}
-
-export default getIconComponent;
+export default IconMapping;

@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import "./UserLinks.css";
-import getIconComponent from "../../../utils/IconMapping";
+import {getIconComponent} from "../../../utils/mappers";
 
 const UserLinks = ({ links }) => {
   let linkComponents = [];
