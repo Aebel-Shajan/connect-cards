@@ -1,10 +1,10 @@
 import PropTypes from "prop-types";
 import "./UserCardBack.css";
-import {getIconComponent} from "../../../utils/mappers";
+import { getIconComponent } from "../../../utils/mappers";
 
 const UserCardBack = ({ user }) => {
   let linkComponents = [];
-  const linkNames = Object.keys(user.links)
+  const linkNames = Object.keys(user.links);
 
   const handleClick = (url) => {
     window.open(url);
@@ -29,7 +29,7 @@ const UserCardBack = ({ user }) => {
 
 UserCardBack.propTypes = {
   user: PropTypes.shape({
-    links: PropTypes.object.isRequired
+    links: PropTypes.object.isRequired,
   }).isRequired,
 };
 
