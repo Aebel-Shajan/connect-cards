@@ -6,10 +6,10 @@ import {
   useLocation,
 } from "react-router-dom";
 import PersonalPage from "./components/PersonalPage/PersonalPage";
-import Home from "./components/Home/Home";
 import { useEffect, useState } from "react";
 import usersData from "./assets/data/users.json";
 import AboutUsPage from "./pages/AboutUsPage/AboutUsPage";
+import HomePage from "./pages/HomePage/HomePage"
 
 function CaseInsensitiveWrapper() {
   const location = useLocation();
@@ -46,7 +46,7 @@ function App() {
       children: [
         {
           path: "/",
-          element: <Home users={users} />,
+          element: <HomePage users={users} />,
         },
         {
           path: "/:userId",
