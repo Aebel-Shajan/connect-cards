@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import "./Home.css";
 import Filter from "./Filter/Filter";
-import Navigation from "../Navigation";
+import Navigation from "../Navigation/Navigation";
 
 import PropTypes from "prop-types";
 

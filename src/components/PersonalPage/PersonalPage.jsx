@@ -7,7 +7,7 @@ import MyProjects from "./MyProjects";
 import getTypeStyle from "../../utils/TypeMapping";
 import UserCard from "../Home/UserCard/UserCard";
 import NotFoundPage from "../NotFoundPage/NotFoundPage";
-import Navigation from "../Navigation";
+import Navigation from "../Navigation/Navigation";
 
 const PersonalPage = ({ users }) => {
   let { userId } = useParams();

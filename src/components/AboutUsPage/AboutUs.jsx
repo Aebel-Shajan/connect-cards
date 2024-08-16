@@ -1,6 +1,6 @@
 import "./AboutUs.css";
 import jsonpic from "../../assets/exampleJSON.png";
-import Navigation from "../Navigation";
+import Navigation from "../Navigation/Navigation";
 
 const AboutUs = () => {
   return (
