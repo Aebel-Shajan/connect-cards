@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import "./Filter.css";
 
 const Filter = ({ filterOptions, setFilterValue }) => {
@@ -26,9 +27,9 @@ const Filter = ({ filterOptions, setFilterValue }) => {
   );
 };
 
-export default Filter;
+Filter.propTypes = {
+  filterOptions: PropTypes.array.isRequired,
+  setFilterValue: PropTypes.func.isRequired,
+};
 
-/* 
-Jest
-Git
-*/
+export default Filter;

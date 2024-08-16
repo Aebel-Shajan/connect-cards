@@ -1,15 +1,13 @@
 import PropTypes from "prop-types";
-import { useParams, useNavigate, Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import "./PersonalPage.css";
 import {} from "module";
 import UserLinks from "./Links/UserLinks";
 import MyProjects from "./MyProjects";
 import getTypeStyle from "../../utils/TypeMapping";
-
 import UserCard from "../Home/UserCard/UserCard";
 import NotFoundPage from "../NotFoundPage/NotFoundPage";
 import Navigation from "../Navigation";
-import { FaHome } from "react-icons/fa";
 
 const PersonalPage = ({ users }) => {
   let { userId } = useParams();
@@ -19,9 +17,8 @@ const PersonalPage = ({ users }) => {
     return <NotFoundPage />;
   }
 
-  const userName = user.name[0].toUpperCase() + user.name.substring(1);
   const color = getTypeStyle(user.type);
-  const links = user?.links;
+  const links = user.links;
 
   return (
     <div
@@ -41,10 +38,7 @@ const PersonalPage = ({ users }) => {
 };
 
 PersonalPage.propTypes = {
-  users: PropTypes.shape({
-    name: PropTypes.string.isRequired,
-    links: PropTypes.arrayOf(PropTypes.object).isRequired,
-  }),
+  users: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 
 export default PersonalPage;

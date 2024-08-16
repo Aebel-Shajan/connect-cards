@@ -6,6 +6,8 @@ import "./Home.css";
 import Filter from "./Filter/Filter";
 import Navigation from "../Navigation";
 
+import PropTypes from "prop-types";
+
 const Home = ({ users }) => {
   const [searchValue, setSearchValue] = useState("");
   const [skillsFilterValue, setSkillsFilterValue] = useState("");
@@ -88,6 +90,10 @@ const Home = ({ users }) => {
       <div className="user-card-container">{userCardComponents}</div>
     </div>
   );
+};
+
+Home.propTypes = {
+  users: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 
 export default Home;

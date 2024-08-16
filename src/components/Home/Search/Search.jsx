@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import "./Search.css";
 
 const Search = ({ setSearchValue }) => {
@@ -22,6 +23,10 @@ const Search = ({ setSearchValue }) => {
       </form>
     </div>
   );
+};
+
+Search.propTypes = {
+  setSearchValue: PropTypes.func.isRequired,
 };
 
 export default Search;
