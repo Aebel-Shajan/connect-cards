@@ -61,14 +61,22 @@
     "name": "Kajanan",
     "type": "Backend",
     "image": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/137.png",
-    "occupation": "Job Hunting",
-    "description": "description less than 100 chars.",
+    "occupation": "Software Engineer",
+    "description": "Trying to become a Software Engineer",
     "skills": ["Java", "Spring", "Postgres"],
     "moves": [
       {
         "name": "Connect Cards",
         "link": "connect-cards.vercel.app",
         "type": ["Frontend", "DevOps"]
+      },
+      {
+        "name": "Parana Deliveries",
+        "type": ["Frontend", "Backend"]
+      },
+      {
+        "name": "2D Coin Snatcher",
+        "type": ["Java"]
       }
     ],
     "links": {
