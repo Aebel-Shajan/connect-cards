@@ -1,6 +1,6 @@
 .personal-page-container {
   padding-bottom: 1rem;
-  
+
   gap: 1rem;
   width: 100vw;
   min-height: 100vh;
@@ -19,7 +19,7 @@
   width: 100%;
   height: fit-content;
   padding: 2rem;
-  
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,7 +27,7 @@
 
 #home-button {
   padding: 0.8rem 1rem;
-  
+
   color: beige;
   font-weight: bold;
   font-size: x-large;
@@ -42,12 +42,10 @@
   align-items: center;
 }
 
-
-
 .user-info-container {
   width: 100%;
   min-height: 70vh;
-  
+
   display: flex;
   column-gap: 2rem;
   justify-content: space-evenly;

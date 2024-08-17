@@ -1,6 +1,13 @@
 import { CgPokemon } from "react-icons/cg";
-import { FaDiscord, FaFacebook, FaGithub, FaHackerrank, FaInstagram, FaLink, FaLinkedin } from "react-icons/fa";
-
+import {
+  FaDiscord,
+  FaFacebook,
+  FaGithub,
+  FaHackerrank,
+  FaInstagram,
+  FaLink,
+  FaLinkedin,
+} from "react-icons/fa";
 
 const IconMapping = {
   linkedin: <FaLinkedin />,
@@ -10,15 +17,7 @@ const IconMapping = {
   facebook: <FaFacebook />,
   discord: <FaDiscord />,
   pokemon: <CgPokemon />,
-  link: <FaLink />
+  link: <FaLink />,
 };
 
-function getIconComponent(iconName) {
-  const IconComponent = IconMapping[iconName.toLowerCase().replaceAll(" ", "")]
-  if (IconComponent) {
-    return IconComponent
-  }
-  return IconMapping["link"]
-}
-
-export default getIconComponent;
+export default IconMapping;

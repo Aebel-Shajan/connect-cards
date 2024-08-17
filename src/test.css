@@ -1,0 +1,17 @@
+.class {
+  /* Sizing and padding */
+  width: 100vw;
+  height: fit-content;
+  padding: 1rem;
+
+  /* Decorative & misc*/
+  font-size: large;
+  background-color: aliceblue;
+  color: red;
+
+  /* Display type */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  flex-direction: column;
+}

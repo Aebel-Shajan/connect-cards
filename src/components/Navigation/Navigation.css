@@ -1,0 +1,30 @@
+header {
+  background-color: transparent;
+}
+
+#navbar {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  list-style-type: none;
+  background-color: #2b5876;
+  padding: 1rem;
+}
+
+.navButton {
+  text-decoration: none;
+  padding: 0.1em 0.3em 0.1em 0.3em;
+  border-radius: 8px;
+  background-color: white;
+  color: #2d304e;
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+
+.navButton:hover {
+  background-color: rgb(203, 198, 198);
+  transform: scale(1.05);
+  font-weight: 800;
+}

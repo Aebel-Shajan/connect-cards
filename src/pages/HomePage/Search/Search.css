@@ -1,0 +1,13 @@
+.search-container {
+  display: flex;
+  justify-content: center;
+  background-color: #2b5876;
+}
+
+.search {
+  padding: 5px;
+  width: 20vw;
+  font-size: 17px;
+  border-radius: 10px;
+  border: none;
+}

@@ -1,10 +1,12 @@
 import Search from "./Search/Search";
-import UserCard from "./UserCard/UserCard";
+import UserCardFront from "../../components/UserCard/UserCardFront/UserCardFront";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
-import "./Home.css";
+import "./HomePage.css";
 import Filter from "./Filter/Filter";
-import Navigation from "../Navigation";
+import Navigation from "../../components/Navigation/Navigation";
+
+import PropTypes from "prop-types";
 
 const Home = ({ users }) => {
   const [searchValue, setSearchValue] = useState("");
@@ -38,7 +40,6 @@ const Home = ({ users }) => {
     "Normal",
   ];
 
-
   let filteredUserCards = users;
   filteredUserCards = filteredUserCards.filter((user) => {
     if (searchValue) {
@@ -61,7 +62,7 @@ const Home = ({ users }) => {
 
   const userCardComponents = filteredUserCards.map((user, i) => {
     return (
-      <UserCard
+      <UserCardFront
         user={user}
         key={`user${i}`}
         onClick={() => navigate(`/${user.name}`)}
@@ -75,14 +76,24 @@ const Home = ({ users }) => {
       <div className="navigationbar">
         <Navigation />
       </div>
-        <Search setSearchValue={setSearchValue} />
+      <Search setSearchValue={setSearchValue} />
       <div className="filter-container">
-        <Filter filterOptions={skillsOptions} setFilterValue={setSkillsFilterValue} />
-        <Filter filterOptions={typeOptions} setFilterValue={setTypesFilterValue} />
+        <Filter
+          filterOptions={skillsOptions}
+          setFilterValue={setSkillsFilterValue}
+        />
+        <Filter
+          filterOptions={typeOptions}
+          setFilterValue={setTypesFilterValue}
+        />
       </div>
       <div className="user-card-container">{userCardComponents}</div>
     </div>
   );
+};
+
+Home.propTypes = {
+  users: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 
 export default Home;

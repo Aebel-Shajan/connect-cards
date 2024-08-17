@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import "./Search.css";
 
 const Search = ({ setSearchValue }) => {
@@ -12,8 +13,7 @@ const Search = ({ setSearchValue }) => {
 
   return (
     <div className="search-container">
-      <form className="search-form"
-            onSubmit={handleSubmit}>
+      <form className="search-form" onSubmit={handleSubmit}>
         <input
           className="search"
           type="text"
@@ -23,6 +23,10 @@ const Search = ({ setSearchValue }) => {
       </form>
     </div>
   );
+};
+
+Search.propTypes = {
+  setSearchValue: PropTypes.func.isRequired,
 };
 
 export default Search;

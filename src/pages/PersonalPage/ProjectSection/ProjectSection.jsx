@@ -1,24 +1,13 @@
 import { useState, useEffect } from "react";
-import repoIcon from "../../assets/repo-icon.png";
-import "./MyProjects.css";
+import PropTypes from "prop-types";
+import repoIcon from "../../../assets/repo-icon.png";
+import "./ProjectSection.css";
 
-const MyProjects = ({ links }) => {
+const ProjectSection = ({ links }) => {
   const [projectRepos, setProjectRepos] = useState([]);
 
   const githubLink = Object.values(links)[1];
   const githubUserName = githubLink.substring(19);
-
-  const getProjectRepos = async () => {
-    const response = await fetch(
-      `https://api.github.com/users/${githubUserName}/repos?per_page=100`,
-    );
-    if (!response.ok) {
-      throw new Error(`Failed to fetch repos! status: ${response.status}`);
-    }
-    let githubRepos = await response.json();
-    githubRepos = githubRepos.slice(0, 50);
-    setProjectRepos(githubRepos);
-  };
 
   const mappedProjects = projectRepos.map((repo) => {
     return (
@@ -34,11 +23,22 @@ const MyProjects = ({ links }) => {
   });
 
   useEffect(() => {
+    const getProjectRepos = async () => {
+      const response = await fetch(
+        `https://api.github.com/users/${githubUserName}/repos?per_page=100`,
+      );
+      if (!response.ok) {
+        throw new Error(`Failed to fetch repos! status: ${response.status}`);
+      }
+      let githubRepos = await response.json();
+      githubRepos = githubRepos.slice(0, 50);
+      setProjectRepos(githubRepos);
+    };
     getProjectRepos();
-  }, []);
+  }, [githubUserName]);
 
   if (mappedProjects.length === 0) {
-    return <></>
+    return <></>;
   }
 
   return (
@@ -49,4 +49,8 @@ const MyProjects = ({ links }) => {
   );
 };
 
-export default MyProjects;
+ProjectSection.propTypes = {
+  links: PropTypes.object.isRequired,
+};
+
+export default ProjectSection;
