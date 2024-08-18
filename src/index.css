@@ -9,8 +9,8 @@ html {
 }
 
 :root {
-  --color-background-dark: #222831;
-  --color-background-secondary: #393E46;
-  --color-highlight: #FFD369;
-  --color-background-light: #EEEEEE;
+  --color-dark: #222831;
+  --color-dark-alt: #393E46;
+  --color-accent: #FFD369;
+  --color-light: #EEEEEE;
 }
