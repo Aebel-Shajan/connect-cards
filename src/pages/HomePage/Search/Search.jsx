@@ -12,14 +12,14 @@ const Search = ({ setSearchValue }) => {
   };
 
   return (
-      <form className="search-form" onSubmit={handleSubmit}>
-        <input
-          className="search"
-          type="text"
-          placeholder="Search Card..."
-          onChange={handleInput}
-        />
-      </form>
+    <form className="search-form" onSubmit={handleSubmit}>
+      <input
+        className="search"
+        type="text"
+        placeholder="Search Card..."
+        onChange={handleInput}
+      />
+    </form>
   );
 };
 

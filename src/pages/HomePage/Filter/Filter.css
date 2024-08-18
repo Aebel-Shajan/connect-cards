@@ -2,10 +2,9 @@
   width: 10rem;
   height: 2rem;
 
-  font-size: 15px;
-  border-radius: 10px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  text-align: center;
+  border-radius: 0.5rem;
+  padding: 0.25rem 1rem;
+
+  text-align: left;
   border: none;
 }

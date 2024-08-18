@@ -1,12 +1,21 @@
 import PropTypes from "prop-types";
 import "./Filter.css";
 
-const Filter = ({ filterOptions, setFilterValue, defaultValue }) => {
-  const filters = filterOptions.map((filterOption) => {
+const Filter = ({
+  filterOptions,
+  filterOptionsAmount,
+  setFilterValue,
+  defaultValue,
+}) => {
+  const filters = filterOptions.map((filterOption, index) => {
+    let amountPrefix = <></>;
+    if (filterOptionsAmount) {
+      amountPrefix = filterOptionsAmount[index].toString() + "x  ";
+    }
     return (
       <option key={filterOption} value={filterOption}>
-        {" "}
-        {filterOption}{" "}
+        {amountPrefix}
+        {filterOption}
       </option>
     );
   });
@@ -25,8 +34,9 @@ const Filter = ({ filterOptions, setFilterValue, defaultValue }) => {
 
 Filter.propTypes = {
   filterOptions: PropTypes.array.isRequired,
+  filterOptionsAmount: PropTypes.array,
   setFilterValue: PropTypes.func.isRequired,
-  defaultValue: PropTypes.string.isRequired
+  defaultValue: PropTypes.string.isRequired,
 };
 
 export default Filter;
