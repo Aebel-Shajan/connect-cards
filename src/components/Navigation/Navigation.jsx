@@ -4,16 +4,23 @@ import ConnectCardsLogo from "./ConnectCardsLogo/ConnectCardsLogo";
 import { FaGithub } from "react-icons/fa";
 
 const Navigation = () => {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   return (
     <nav id="navbar">
       <div id="brand-container" onClick={() => navigate("/")}>
-        <ConnectCardsLogo/>
+        <ConnectCardsLogo />
       </div>
-      <div id="nav-links">        
-          <a className="nav-link" href="https://www.github.com/aebel-shajan/connect-cards"><FaGithub/></a>
-          <Link className="nav-link" to="/about-us">About</Link>
+      <div id="nav-links">
+        <a
+          className="nav-link"
+          href="https://www.github.com/aebel-shajan/connect-cards"
+        >
+          <FaGithub />
+        </a>
+        <Link className="nav-link" to="/about-us">
+          About
+        </Link>
       </div>
       <Outlet />
     </nav>

@@ -18,8 +18,18 @@
   color: beige;
 }
 
-.filter-container {
-  background-color: #2b5876;
+.search-container {
+  padding: 1rem;
+  padding-top: 2rem;
+  background-color: black;
+
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.search-container > * {
+  flex-grow: 1;
 }

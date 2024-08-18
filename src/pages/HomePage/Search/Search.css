@@ -1,12 +1,11 @@
-.search-container {
-  display: flex;
-  justify-content: center;
-  background-color: #2b5876;
+.search-form {
+  width: 10rem;
 }
 
 .search {
-  padding: 5px;
-  width: 20vw;
+  padding: 0.25rem 1rem;
+  height: 2rem;
+  width: 100%;
   font-size: 17px;
   border-radius: 10px;
   border: none;

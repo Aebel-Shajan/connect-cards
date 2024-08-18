@@ -1,16 +1,10 @@
-.skillsFilter-container {
-  background-color: #2b5876;
-  padding-top: 10px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
 .filter-selection {
-  font-size: 15px;
-  border-radius: 10px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  width: 9vw;
-  text-align: center;
+  width: 10rem;
+  height: 2rem;
+
+  border-radius: 0.5rem;
+  padding: 0.25rem 1rem;
+
+  text-align: left;
   border: none;
 }
