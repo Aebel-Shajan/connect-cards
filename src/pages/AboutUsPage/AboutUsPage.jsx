@@ -6,10 +6,8 @@ const AboutUsPage = () => {
   return (
     <>
       <div className="about-us-container">
+        <Navigation />
         <h1 id="about-title">About Us!</h1>
-        <div className="navigationbar">
-          <Navigation />
-        </div>
         <div className="app-desc-container">
           <h3 className="title1">What is Connect Cards?</h3>
           <p className="paragraph1">

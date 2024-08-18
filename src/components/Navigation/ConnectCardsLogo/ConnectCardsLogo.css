@@ -1,0 +1,17 @@
+.logo-container {
+    /* Dimensions */
+    width: 10rem;
+    height: 2rem;
+
+    /* Decorative */
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    border: solid 2px white;
+    border-radius: 1rem;
+
+    /* Display */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
