@@ -73,15 +73,17 @@ const Home = ({ users }) => {
   return (
     <div className="home-container">
       <Navigation />
-      <Search setSearchValue={setSearchValue} />
-      <div className="filter-container">
+      <div className="search-container">
+        <Search setSearchValue={setSearchValue} />
         <Filter
           filterOptions={skillsOptions}
           setFilterValue={setSkillsFilterValue}
+          defaultValue="All skills"
         />
         <Filter
           filterOptions={typeOptions}
           setFilterValue={setTypesFilterValue}
+          defaultValue="All types"
         />
       </div>
       <div className="user-card-container">{userCardComponents}</div>

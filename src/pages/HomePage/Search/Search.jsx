@@ -12,7 +12,6 @@ const Search = ({ setSearchValue }) => {
   };
 
   return (
-    <div className="search-container">
       <form className="search-form" onSubmit={handleSubmit}>
         <input
           className="search"
@@ -21,7 +20,6 @@ const Search = ({ setSearchValue }) => {
           onChange={handleInput}
         />
       </form>
-    </div>
   );
 };
 
