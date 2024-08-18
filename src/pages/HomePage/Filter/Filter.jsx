@@ -26,6 +26,7 @@ const Filter = ({ filterOptions, setFilterValue, defaultValue }) => {
 Filter.propTypes = {
   filterOptions: PropTypes.array.isRequired,
   setFilterValue: PropTypes.func.isRequired,
+  defaultValue: PropTypes.string.isRequired
 };
 
 export default Filter;
