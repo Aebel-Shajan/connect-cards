@@ -1,12 +1,8 @@
 .about-us-container {
   width: 100%;
   min-height: 100vh;
-  padding: 2rem;
 
   background: linear-gradient(to bottom, #2b5876, #4e4376);
-}
-
-.app-desc-container {
 }
 
 .app-desc-container > h3 {

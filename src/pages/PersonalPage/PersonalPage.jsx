@@ -23,9 +23,7 @@ const PersonalPage = ({ users }) => {
       className="personal-page-container"
       style={{ "--type-color-transparent": color["color"] + "88" }}
     >
-      <div className="nav-container">
-        <Navigation />
-      </div>
+      <Navigation />
       <div className="user-info-container">
         <UserCardFront user={user} />
         <UserCardBack user={user} />
