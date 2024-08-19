@@ -1,5 +1,6 @@
 .text-container {
   padding: 2rem;
+  width: 100%;
   max-width: 60rem;
   min-height: 100vh;
 
@@ -29,7 +30,7 @@ h4 {
   overflow-x: auto;
 }
 
-.text-container ol {
+.text-container ol, ul {
   padding-left: 2rem;
 }
 
@@ -40,4 +41,9 @@ h4 {
 
 .text-container section {
   padding-top: 2rem;
+}
+
+.text-container img {
+  width: 100%;
+  object-fit: contain;
 }
