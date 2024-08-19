@@ -30,7 +30,8 @@ h4 {
   overflow-x: auto;
 }
 
-.text-container ol, ul {
+.text-container ol,
+ul {
   padding-left: 2rem;
 }
 
