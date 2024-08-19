@@ -47,7 +47,7 @@ const AboutUsPage = () => {
         <section>
           <h3>Whats in store for the future?</h3>
           <p>
-            If this connect-cards up actually being used by people we plan on
+            If connect-cards up actually being used by people we plan on
             adding the following:
             <ul>
               <li>User authentication/accounts.</li>
