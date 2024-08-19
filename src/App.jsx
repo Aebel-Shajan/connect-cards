@@ -10,6 +10,7 @@ import usersData from "./assets/data/users.json";
 import AboutUsPage from "./pages/AboutUsPage/AboutUsPage";
 import HomePage from "./pages/HomePage/HomePage";
 import PersonalPage from "./pages/PersonalPage/PersonalPage";
+import AddCardPage from "./pages/AddCardPage/AddCardPage";
 
 function CaseInsensitiveWrapper() {
   const location = useLocation();
@@ -59,6 +60,10 @@ function App() {
         {
           path: "/about-us",
           element: <AboutUsPage />,
+        },
+        {
+          path: "/add-card",
+          element: <AddCardPage />,
         },
       ],
     },

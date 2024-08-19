@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import "./UserCardFront.css";
 import UserSkills from "./UserSkills/UserSkills";
-import TypeIcon from "./TypeIcon/TypeIcon";
+import TypeIcon from "../../TypeIcon/TypeIcon";
 import { getTypeStyle } from "../../../utils/mappers";
 
 const TypesComponent = ({ types }) => {

@@ -1,54 +1,68 @@
 import "./AboutUsPage.css";
-import jsonpic from "../../assets/exampleJSON.png";
 import Navigation from "../../components/Navigation/Navigation";
+import TextContainer from "../../components/TextContainer/TextContainer";
+import cardPreview from "../../assets/nfc-card-preview.jpg";
 
 const AboutUsPage = () => {
   return (
-    <>
-      <div className="about-us-container">
-        <Navigation />
-        <h1 id="about-title">About Us!</h1>
-        <div className="app-desc-container">
-          <h3 className="title1">What is Connect Cards?</h3>
-          <p className="paragraph1">
-            This app is designed to help you connect with a diverse and unique
-            network of individuals. Whether youre looking to make new friends,
-            find collaborators for projects, or expand your professional
-            connections, this platform provides the perfect space to meet
-            like-minded people. By joining our community, you can share your
-            skills, showcase your work, and discover opportunities to
-            collaborate with others who share your passions.
+    <div className="about-us-container">
+      <Navigation />
+      <TextContainer>
+        <h1>About Us!</h1>
+        <section>
+          <h3>What is Connect Cards?</h3>
+          <p>
+            This website was made to encourage collabaration and networking
+            between people who are in tech. By adding your own card, you get
+            your own personal page containing your important links and github
+            projects.
           </p>
-        </div>
+          <br />
+          <p>
+            This was a good practice in using react and we used this as a way to
+            further refine our skills. We learned how to use formatting tools
+            (Prettier and eslint), deployment tools (Vercel) and how to work
+            together using github.
+          </p>
+          <br />
+          <h6>Also we really wanted to get the stargazer badge on github 🤫</h6>
+        </section>
+        <section>
+          <h3>Who are we?</h3>
+          <p>
+            This project was made in collabaration between{" "}
+            <a href="https://github.com/Y-Negash" target="_blank">
+              Yabbi
+            </a>
+            ,<a href="https://github.com/KajananGit">Kajanan</a> and{" "}
+            <a href="https://github.com/aebel-shajan">Aebel</a>. It was
+            originally only meant to be a quick week long project. However like
+            all great projects, we experienced some major scope creep and it
+            ended up lasting 3 weeks. We used github projects as our kanban
+            board for the first time, making use of converting issues to
+            tickets.
+          </p>
+        </section>
 
-        <div className="participation-desc-container">
-          <h3 className="title2">How You Can Be Part of It!</h3>
-          <p className="paragraph2">
-            Want to contribute to this project and become part of our growing
-            network? It&rsquo;s easy! Join our GitHub repository and add your
-            own profile to the JSON file. By doing so, you&rsquo;ll be able to
-            share your background, skills, and interests with the community.
+        <section>
+          <h3>Whats in store for the future?</h3>
+          <p>
+            If connect-cards up actually being used by people we plan on
+            adding the following:
+            <ul>
+              <li>User authentication/accounts.</li>
+              <li>
+                Offer ability to buy physical nfc enabled version of the cards.
+              </li>
+              <li>Add more designs for the personal pages.</li>
+            </ul>
           </p>
-          <p className="paragraph3">
-            Here&rsquo;s the format to use when adding your profile:
-          </p>
-
-          <div className="json-img-container">
-            <img
-              className="json-img"
-              src={jsonpic}
-              alt="JSON example code"
-            ></img>
-          </div>
-
-          <p className="paragraph4">
-            By adding your profile, you&rsquo;ll make it easier for others to
-            connect with you and explore what you bring to the table. Join us
-            today and become a vital part of this innovative project!
-          </p>
-        </div>
-      </div>
-    </>
+          <br />
+          <p>Here&rsquo;s a sneak peek: </p>
+          <img src={cardPreview} />
+        </section>
+      </TextContainer>
+    </div>
   );
 };
 

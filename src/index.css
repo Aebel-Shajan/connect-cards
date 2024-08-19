@@ -7,3 +7,10 @@
 html {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+:root {
+  --color-dark: #222831;
+  --color-dark-alt: #393e46;
+  --color-accent: #f1fa8c;
+  --color-light: ivory;
+}

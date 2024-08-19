@@ -1,5 +1,6 @@
 #navbar {
   /* Dimensions */
+  width: 100%;
   position: sticky;
   top: 0;
   padding: 1rem;
@@ -34,9 +35,8 @@
 }
 
 .nav-link {
-  height: 100%;
   height: 3rem;
-  min-width: 3rem;
+  min-width: fit-content;
   padding: 0 1rem;
 
   color: white;

@@ -3,7 +3,7 @@
   min-height: 100vh;
   padding: 2rem;
 
-  background: linear-gradient(to bottom, #2b5876, #4e4376);
+  background-color: var(--color-dark);
 
   display: flex;
   justify-content: center;
