@@ -2,10 +2,12 @@
 
 A website to display/advertise business cards which are styled like pokemon cards. Offer the ability for users to have their own page full of their own links like linktree.
 
+<a href="https://connect-cards.vercel.app" target="_blank"> ![https://raw.githubusercontent.com/Aebel-Shajan/connect-cards/main/thumbnail.png](https://raw.githubusercontent.com/Aebel-Shajan/connect-cards/main/thumbnail.png)
+</a>
 ## Minimum Viable Product:
-* [ ] Create default card component to display user info
-* [ ] Have a search bar/filter component to search different cards
-* [ ] Have a seperate page for each user where links are displayed like linktree.
+* [x] Create default card component to display user info
+* [x] Have a search bar/filter component to search different cards
+* [x] Have a seperate page for each user where links are displayed like linktree.
 
 ## Extension:
 * [ ] Add signup/login page with authentication
