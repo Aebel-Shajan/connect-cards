@@ -1,0 +1,32 @@
+.add-card-container {
+  width: 100%;
+  min-height: 100vh;
+
+  background-color: var(--color-dark-alt);
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.types-list {
+  padding: 1rem;
+  width: 100%;
+
+  list-style: none;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.types-list-item {
+  padding: 0.5rem 1rem;
+
+  background-color: black;
+  border-radius: 1rem;
+
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
