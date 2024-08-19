@@ -1,0 +1,40 @@
+.text-container {
+    padding: 2rem;
+    max-width: 60rem;
+    min-height: 100vh;
+
+    font-size: 1.3rem;
+    font-family: "consolas";
+    background-color: var(--color-dark);
+    color:var(--color-light);
+    box-shadow: 0px 0px 10px black;
+
+    color: var(--color-light);
+    background-color: var(--color-dark);
+}
+
+.text-container h1, h2, h3, h4 {
+    padding: 1rem 0;
+}
+
+.text-container h1 {
+    color: var(--color-accent);
+    border-bottom: solid 1px var(--color-accent);
+}
+
+.text-container div {
+    overflow-x: auto;
+}
+
+.text-container ol {
+    padding-left: 2rem;
+}
+
+.text-container a {
+    color: var(--color-accent);
+    text-decoration: none;
+}
+
+.text-container section {
+    padding-top: 2rem;
+}
