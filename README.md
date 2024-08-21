@@ -4,6 +4,17 @@ A website to display/advertise business cards which are styled like pokemon card
 
 <a href="https://connect-cards.vercel.app" target="_blank"> ![https://raw.githubusercontent.com/Aebel-Shajan/connect-cards/main/thumbnail.png](https://raw.githubusercontent.com/Aebel-Shajan/connect-cards/main/thumbnail.png)
 </a>
+
+## Usage
+Instructions on how to add your own card are here: https://connect-cards.vercel.app/add-card.
+
+In summary you have to fork the repo, make changes to the users.json file and then submit a pull request.
+
+You can do all this in github, no cloning the repo down to your local machine.
+
+If you find it difficult to use or have any feedback, feel free to submit an issue on this repo. 
+
+
 ## Minimum Viable Product:
 * [x] Create default card component to display user info
 * [x] Have a search bar/filter component to search different cards
