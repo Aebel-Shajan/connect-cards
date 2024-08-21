@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import PropTypes from "prop-types";
-import repoIcon from "../../../assets/repo-icon.png";
+import repoIcon from "../../../assets/images/repo-icon.png";
 import "./ProjectSection.css";
 
 const ProjectSection = ({ links }) => {
