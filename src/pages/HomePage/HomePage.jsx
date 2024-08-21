@@ -85,6 +85,14 @@ const Home = ({ users }) => {
           setFilterValue={setTypesFilterValue}
           defaultValue="All types"
         />
+        <button
+          onClick={()=> {
+            setTypesFilterValue("")
+            setSkillsFilterValue("")
+            setSearchValue("")
+          }}>
+            Clear Filters
+          </button>
       </div>
       <div className="user-card-container">{userCardComponents}</div>
     </div>
