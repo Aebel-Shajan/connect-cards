@@ -14,3 +14,14 @@ html {
   --color-accent: #f1fa8c;
   --color-light: ivory;
 }
+
+.text-page-container {
+  width: 100%;
+  min-height: 100vh;
+
+  background-color: var(--color-dark-alt);
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}

@@ -11,6 +11,7 @@ import AboutUsPage from "./pages/AboutUsPage/AboutUsPage";
 import HomePage from "./pages/HomePage/HomePage";
 import PersonalPage from "./pages/PersonalPage/PersonalPage";
 import AddCardPage from "./pages/AddCardPage/AddCardPage";
+import InstructionsPage from "./pages/InstructionsPage/InstructionsPage";
 
 function CaseInsensitiveWrapper() {
   const location = useLocation();
@@ -63,7 +64,16 @@ function App() {
         },
         {
           path: "/add-card",
-          element: <AddCardPage />,
+          children: [
+            {
+              path: "/add-card",
+              element: <AddCardPage />
+            },
+            {
+              path: "/add-card/instructions",
+              element: <InstructionsPage /> 
+            }
+          ]
         },
       ],
     },
