@@ -24,7 +24,7 @@ const MoveComponent = ({ move }) => {
   return (
     <div className="move-container">
       <TypesComponent types={move["type"]} />
-      <div className="move-name">{move["name"]}</div>
+      <a className="move-name" href={move["link"]} target="__blank">{move["name"]}</a>
     </div>
   );
 };
@@ -33,6 +33,7 @@ MoveComponent.propTypes = {
   move: PropTypes.shape({
     name: PropTypes.string,
     type: PropTypes.arrayOf(PropTypes.string),
+    link: PropTypes.string,
   }),
 };
 
