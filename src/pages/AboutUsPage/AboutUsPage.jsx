@@ -1,11 +1,10 @@
-import "./AboutUsPage.css";
 import Navigation from "../../components/Navigation/Navigation";
 import TextContainer from "../../components/TextContainer/TextContainer";
 import cardPreview from "../../assets/nfc-card-preview.jpg";
 
 const AboutUsPage = () => {
   return (
-    <div className="about-us-container">
+    <div className="text-page-container">
       <Navigation />
       <TextContainer>
         <h1>About Us!</h1>

@@ -4,15 +4,18 @@ import TypeMapping from "../../utils/TypeMapping";
 import Navigation from "../../components/Navigation/Navigation";
 import "./AddCardPage.css";
 import TypeIcon from "../../components/TypeIcon/TypeIcon";
+import { Link } from "react-router-dom";
 
 const AddCardPage = () => {
   return (
-    <div className="add-card-container">
+    <div className="text-page-container">
       <Navigation />
       <TextContainer>
         <h1>Add your own card</h1>
         <section id="add-card">
           <h3>Want to create your own card?</h3>
+          <Link to="/add-card/instructions">For step by step image instructions click here.</Link> 
+          <h4>In summary: </h4>
           <ol>
             <li>
               First fork the github repo from{" "}
