@@ -51,6 +51,8 @@
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
+  gap: 2rem;
+  padding-top: 2rem;
 }
 
 .nav-container {
