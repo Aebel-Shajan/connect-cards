@@ -1,6 +1,6 @@
 import Navigation from "../../components/Navigation/Navigation";
 import TextContainer from "../../components/TextContainer/TextContainer";
-import cardPreview from "../../assets/nfc-card-preview.jpg";
+import cardPreview from "../../assets/images/nfc-card-preview.jpg";
 
 const AboutUsPage = () => {
   return (
@@ -33,7 +33,7 @@ const AboutUsPage = () => {
             <a href="https://github.com/Y-Negash" target="_blank">
               Yabbi
             </a>
-            ,<a href="https://github.com/KajananGit">Kajanan</a> and{" "}
+            , <a href="https://github.com/KajananGit">Kajanan</a> and{" "}
             <a href="https://github.com/aebel-shajan">Aebel</a>. It was
             originally only meant to be a quick week long project. However like
             all great projects, we experienced some major scope creep and it
