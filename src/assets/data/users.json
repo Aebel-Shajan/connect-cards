@@ -204,25 +204,26 @@
       "?!": ""
     }
   },
+
   
 {
-  "name": "Steve Jobss",
+  "name": "Steve-jobss",
   "type": "ai",
-  "image": "/steve-jobss.png",
-  "occupation": "Inventor",
-  "description": "Hello my name is steve jobss i made the phone.",
+  "image": "/steve-jobs",
+  "occupation": "Unemployed",
+  "description": "I made phone.",
   "moves": [
     {
       "name": "apple",
-      "link": "Enter link of move1 here",
+      "link": "",
       "type": ["ai", "normal"]
     }
   ],
-  "skills": ["Apple", "iOS", "Apple Pay"],
+  "skills": ["Apple", "IOS", "Apple Pay"],
   "links": {
-    "Apple": "https://www.apple.com",
-    "Github": "https://www.github.com/steve-jobss",
-    "Apple2": "https://cdn.britannica.com/22/187222-050-07B17FB6/apples-on-a-tree-branch.jpg"
+    "Apple": "https://www.apple.com/",
+    "Github": "https://github.com/steve-jobss",
+    "Apple2": "https://en.wikipedia.org/wiki/Apple"
   }
 }
 ]
