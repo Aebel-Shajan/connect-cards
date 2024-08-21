@@ -2,7 +2,7 @@
   {
     "name": "Aebel",
     "type": "Data",
-    "image": "https://i.pinimg.com/originals/06/a4/68/06a468cb80122f3d28831fe88f681d9d.png",
+    "image": "/user-images/aebel.png",
     "occupation": "Data Analyst",
     "description": "I like data, making things and pokemon (before gen v).",
     "moves": [
@@ -180,7 +180,7 @@
   {
     "name": "Pokechu",
     "type": "Normal",
-    "image": "/pokechu.png",
+    "image": "/user-images/pokechu.png",
     "occupation": "yes",
     "description": "???",
     "skills": ["Wii", "3DS", "Gamecube"],
@@ -209,7 +209,7 @@
 {
   "name": "Steve-jobss",
   "type": "ai",
-  "image": "/steve-jobss.png",
+  "image": "/user-images/steve-jobss.png",
   "occupation": "Unemployed",
   "description": "I made phone.",
   "moves": [
