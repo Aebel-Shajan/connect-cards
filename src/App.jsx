@@ -12,6 +12,7 @@ import HomePage from "./pages/HomePage/HomePage";
 import PersonalPage from "./pages/PersonalPage/PersonalPage";
 import AddCardPage from "./pages/AddCardPage/AddCardPage";
 import InstructionsPage from "./pages/InstructionsPage/InstructionsPage";
+import ThreeDPage from "./pages/ThreeDPage/ThreeDPage";
 
 function CaseInsensitiveWrapper() {
   const location = useLocation();
@@ -52,11 +53,25 @@ function App() {
         },
         {
           path: "/:userId",
-          element: !loading ? (
-            <PersonalPage users={users} />
-          ) : (
-            <LoadingComponent />
-          ),
+          children: [
+            {
+            path: "/:userId",
+            element: !loading ? (
+              <PersonalPage users={users} />
+            ) : (
+              <LoadingComponent />
+            ),
+          },
+          {
+            path: "/:userId/3d",
+            element: !loading ? (
+              <ThreeDPage users={users}/>
+            ) : (
+              <LoadingComponent />
+            )
+          }
+
+          ]
         },
         {
           path: "/about-us",
@@ -71,7 +86,7 @@ function App() {
             },
             {
               path: "/add-card/instructions",
-              element: <InstructionsPage /> 
+              element: <InstructionsPage />
             }
           ]
         },
