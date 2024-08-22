@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import "./PersonalPage.css";
 import ProjectSection from "./ProjectSection/ProjectSection";
 import { getTypeStyle } from "../../utils/mappers";
@@ -24,6 +24,10 @@ const PersonalPage = ({ users }) => {
       style={{ "--type-color-transparent": color["color"] + "88" }}
     >
       <Navigation />
+      <button className="three-button">
+        <Link to={`/${userId}/3d`} > Go 3d</Link>
+      </button>
+
       <div className="user-info-container">
         <UserCardFront user={user} />
         <UserCardBack user={user} />

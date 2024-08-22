@@ -13,6 +13,32 @@
     url(https://static.vecteezy.com/system/resources/thumbnails/004/837/100/small/grey-watercolor-paper-or-concrete-grunge-background-vector.jpg);
   background-blend-mode: color;
   background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.three-button {
+  height: 3rem;
+  min-width: fit-content;
+  padding: 0 1rem;
+
+  background-color: black;
+  color: white;
+  border: solid 1px white;
+  border-radius: 0.5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.three-button > a {
+  text-decoration: none;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
 }
 
 .button-container {
