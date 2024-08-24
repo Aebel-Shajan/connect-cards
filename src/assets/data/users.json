@@ -32,23 +32,23 @@
   {
     "name": "Yabbi",
     "type": "Frontend",
-    "image": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/1009.png",
-    "occupation": "Walker 🚶‍♀️",
-    "description": "I walk thats all i do.",
-    "skills": ["React", "JavaScript", "Spring"],
+    "image": "/image-yabbi.svg",
+    "occupation": "Software Engineer",
+    "description": "Elite employee 👾 I like coding things to existence :)",
+    "skills": ["React", "Java", "JavaScript"],
     "moves": [
-      {
-        "name": "Walk",
-        "type": ["normal"]
-      },
-      {
-        "name": "Nemovies",
-        "type": ["Frontend", "Backend"]
-      },
       {
         "name": "Connect Cards",
         "link": "connect-cards.vercel.app",
         "type": ["Frontend", "DevOps"]
+      },
+      {
+        "name": "Nemovies",
+        "type": ["Backend", "Frontend"]
+      },
+      {
+        "name": "Parana Deliveries",
+        "type": ["Backend", "Frontend"]
       }
     ],
     "links": {
