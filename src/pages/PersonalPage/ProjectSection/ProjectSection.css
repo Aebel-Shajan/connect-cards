@@ -38,7 +38,9 @@
 }
 
 #title {
-  color: #00025f;
+  color: white;
+  background-color: black;
+  padding: 0.7rem;
   font-size: 3rem;
   text-align: start;
   grid-column: 1;
