@@ -24,13 +24,15 @@ const PersonalPage = ({ users }) => {
       style={{ "--type-color-transparent": color["color"] + "88" }}
     >
       <Navigation />
+      <div className="card-box">
       <button className="three-button">
-        <Link to={`/${userId}/3d`} > Go 3d</Link>
+        <Link to={`/${userId}/3d`} > GO 3D</Link>
       </button>
 
       <div className="user-info-container">
         <UserCardFront user={user} />
         <UserCardBack user={user} />
+      </div>
       </div>
       <ProjectSection links={user.links} />
     </div>

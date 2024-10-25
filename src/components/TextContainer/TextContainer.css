@@ -31,7 +31,7 @@ h4 {
 }
 
 .text-container ol,
-ul {
+ul:not(#repo-title) {
   padding-left: 2rem;
 }
 
