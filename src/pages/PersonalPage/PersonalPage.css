@@ -17,12 +17,25 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+}
+
+.card-box {
+  width: 85%;
+  border-radius: 1rem;
+  margin: 3em 0 2em 0;
+  padding: 1.5em 0 3em 0;
+  --type-color-transparent: rgba(255, 255, 255, 0.489);
+  background: linear-gradient(rgb(255 255 255 / 72%), rgb(255 255 255 / 43%));
+  box-shadow: 0 0 40px 0;
 }
 
 .three-button {
   height: 3rem;
   min-width: fit-content;
-  padding: 0 1rem;
+  padding: 0 2rem;
+  margin: 0.6em auto;
+  font-size: 30px;
 
   background-color: black;
   color: white;
@@ -70,8 +83,7 @@
 
 .user-info-container {
   width: 100%;
-  min-height: 70vh;
-
+  max-height: 70vh;
   display: flex;
   column-gap: 2rem;
   justify-content: space-evenly;
